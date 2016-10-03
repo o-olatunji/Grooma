@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="n2Y-ym-fIq">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="gWx-j3-xfw">
+            <objects>
+                <viewController id="n2Y-ym-fIq" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jgz-cV-Aff"/>
+                        <viewControllerLayoutGuide type="bottom" id="eDn-to-tul"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LHe-4T-3el">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bD1-00-Wtf">
+                                <frame key="frameInset" minX="91" minY="264" width="232" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="25"/>
+                                <state key="normal" title="Pet Owner">
+                                    <color key="titleColor" red="0.5921008874" green="0.94353321339999996" blue="0.3083701177" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="ChZ-ib-QNn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b5G-n4-VO1">
+                                <frame key="frameInset" minX="91" minY="393" width="232" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.5921008874" green="0.94353321339999996" blue="0.3083701177" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="25"/>
+                                <state key="normal" title="Vet">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="k6Y-Ys-atZ" kind="show" id="k2I-y6-03v"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.78819663556639508" green="1" blue="0.83919048338042646" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FmF-GN-yd5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1087.2" y="124.58770614692655"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VetsNow" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgy-fR-t2n">
+                                <color key="backgroundColor" red="0.47277579212855864" green="0.55962733741819704" blue="0.89804892015706805" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="337" id="3TC-k5-1ex"/>
+                                    <constraint firstAttribute="height" constant="87" id="y6F-if-5KB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
+                                <state key="normal" title="Sign In With Facebook"/>
+                                <connections>
+                                    <action selector="FBLogInButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jbs-mG-waY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.78819663559999997" green="1" blue="0.83919048340000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dgy-fR-t2n" secondAttribute="bottom" constant="290" id="54r-3l-QD3"/>
+                            <constraint firstItem="dgy-fR-t2n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Jo-yk-HNU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="FBButtonAppearance" destination="dgy-fR-t2n" id="sPi-hv-Exr"/>
+                        <segue destination="I6H-hg-tRg" kind="show" identifier="signIn" id="KMS-Ap-8zE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-178.40000000000001" y="124.58770614692655"/>
+        </scene>
+        <!--Vet Sign View Controller-->
+        <scene sceneID="b6F-nc-qgV">
+            <objects>
+                <viewController id="k6Y-Ys-atZ" customClass="VetSignViewController" customModule="VetsNow" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DH9-9n-moA"/>
+                        <viewControllerLayoutGuide type="bottom" id="nRa-4g-hdp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KDR-ew-ulm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9wt-Oz-anp">
+                                <frame key="frameInset" minX="98" minY="224" width="219" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mqg-MH-OCq">
+                                <frame key="frameInset" minX="98" minY="285" width="219" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XpN-YW-HOt">
+                                <frame key="frameInset" minX="98" minY="353" width="219" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mj1-cT-ZgP">
+                                <frame key="frameInset" minX="98" minY="423" width="219" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pDA-Nk-Mk4">
+                                <frame key="frameInset" minX="98" minY="489" width="219" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.5921008874" green="0.94353321339999996" blue="0.3083701177" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="signUpGroomer:" destination="k6Y-Ys-atZ" eventType="touchUpInside" id="f5G-BL-hUV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vdG-h2-D0E">
+                                <frame key="frameInset" minX="84" minY="554" width="247" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Already have an account? Log In"/>
+                                <connections>
+                                    <segue destination="7TL-PB-HYi" kind="show" id="pTZ-rJ-V9e"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.78819663559999997" green="1" blue="0.83919048340000002" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="grommerEmail" destination="mqg-MH-OCq" id="aTj-BD-S2E"/>
+                        <outlet property="groomerCertificate" destination="mj1-cT-ZgP" id="YXh-Ka-Xjm"/>
+                        <outlet property="groomerName" destination="9wt-Oz-anp" id="XDN-gK-M4S"/>
+                        <outlet property="groomerPassword" destination="XpN-YW-HOt" id="7Ah-ew-638"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BIZ-PU-5aG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-178.2608695652174" y="911.41304347826099"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="uXh-uW-gdA">
+            <objects>
+                <viewController storyboardIdentifier="Main" id="I6H-hg-tRg" customClass="Home" customModule="VetsNow" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="63L-VR-qUE"/>
+                        <viewControllerLayoutGuide type="bottom" id="7mz-1k-AJZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UaX-2D-dXl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mJH-f6-TVR">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="8Gx-HT-4UV"/>
+                                    <constraint firstAttribute="height" constant="50" id="oZp-7q-ITh"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xbr-3s-3pw"/>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mJH-f6-TVR" firstAttribute="leading" secondItem="UaX-2D-dXl" secondAttribute="leadingMargin" constant="4" id="1uS-g9-paM"/>
+                            <constraint firstItem="Xbr-3s-3pw" firstAttribute="bottom" secondItem="mJH-f6-TVR" secondAttribute="bottom" id="8Uw-qH-1nl"/>
+                            <constraint firstItem="Xbr-3s-3pw" firstAttribute="trailing" secondItem="mJH-f6-TVR" secondAttribute="trailing" id="CfE-rx-NZ0"/>
+                            <constraint firstItem="Xbr-3s-3pw" firstAttribute="top" secondItem="mJH-f6-TVR" secondAttribute="top" id="D0S-rS-ygK"/>
+                            <constraint firstItem="Xbr-3s-3pw" firstAttribute="leading" secondItem="mJH-f6-TVR" secondAttribute="leading" id="JTa-ZY-hV6"/>
+                            <constraint firstItem="mJH-f6-TVR" firstAttribute="top" secondItem="63L-VR-qUE" secondAttribute="bottom" constant="8" id="PzX-FK-LAD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="FBProfilePic" destination="mJH-f6-TVR" id="rXS-Bc-Lpx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v1V-IF-Wff" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="839.20000000000005" y="124.58770614692655"/>
+        </scene>
+        <!--VendorLogIn-->
+        <scene sceneID="NQF-0R-L4s">
+            <objects>
+                <viewControllerPlaceholder storyboardName="VendorLogIn" id="7TL-PB-HYi" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dfi-BT-hbq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-178" y="1596"/>
+        </scene>
+    </scenes>
+</document>
