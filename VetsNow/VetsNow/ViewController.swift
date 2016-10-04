@@ -11,12 +11,15 @@ import Parse
 import ParseFacebookUtilsV4
 import FBSDKCoreKit
 
-
 class ViewController: UIViewController {
+    
+    var myBool = false
     
     @IBOutlet weak var FBButtonAppearance: UIButton!
     
     @IBAction func FBLogInButton(_ sender: AnyObject) {
+        
+        self.myBool = true
         
         let permissions = ["public_profile","email"]
         
@@ -32,7 +35,7 @@ class ViewController: UIViewController {
                     let deadlineTime = DispatchTime.now()
                     DispatchQueue.main.asyncAfter(deadline: deadlineTime) {
                         print(user)
-                        self.performSegue(withIdentifier: "signIn", sender: self)
+                        //self.performSegue(withIdentifier: "signIn", sender: self)
                     }
                 }
             }
@@ -41,7 +44,12 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         
-        if (FBSDKAccessToken.current() != nil) {
+        //        if (FBSDKAccessToken.current() != nil) {
+        //
+        //            performSegue(withIdentifier: "signIn", sender: self)
+        //        }
+        
+        if myBool == true {
             
             performSegue(withIdentifier: "signIn", sender: self)
         }
@@ -50,7 +58,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-                FBButtonAppearance.layer.cornerRadius = 25
+        FBButtonAppearance.layer.cornerRadius = 25
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
