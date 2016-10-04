@@ -12,13 +12,11 @@ import Parse
 import FBSDKCoreKit
 import ParseFacebookUtilsV4
 
-class Home : UIViewController {
+class Home : UIViewController    {
     
     @IBOutlet weak var FBProfilePic: UIImageView!
     
     override func viewDidAppear(_ animated: Bool) {
-        
-        FBProfilePic.isHidden = true
         
         getUserInfoFromFB()
         
@@ -32,38 +30,44 @@ class Home : UIViewController {
         let connection = FBSDKGraphRequestConnection()
         connection.add(graphRequest, completionHandler: { (connection, result, error) -> Void in
             
-            if error != nil{
-                let conn = connection
-                print(error)
-                print(conn)
-            }
+            if self.FBProfilePic.image == nil {
                 
-            else if let result = result {
-                
-                let userId = result as! NSDictionary
-                let realId = userId["id"] as! String
-                
-                PFUser.current()?.saveInBackground(block: { (Bool, error) in
-                    if error != nil {
-                    PFUser.current()?["name"] = userId["name"]
-                    PFUser.current()?["email"] = userId["email"]
-                    PFUser.current()?.saveInBackground()
-                    }
-                    else {
-                        print(error)
-                    }
-                })
-                
-                let profilePic = "https://graph.facebook.com/" + realId + "/picture?type=large"
-                
-                if let profileUrl = URL(string: profilePic) {
+                if error != nil{
+                    let conn = connection
+                    print(error)
+                    print(conn)
+                }
                     
-                    guard let data = try? Data(contentsOf: profileUrl) else {return}
-                     self.FBProfilePic.isHidden = false
-                    self.FBProfilePic.image = UIImage(data: data)
+                else if let result = result {
+                    
+                    let userId = result as! NSDictionary
+                    let realId = userId["id"] as! String
+                    
+                    PFUser.current()?.saveInBackground(block: { (Bool, error) in
+                        if error != nil {
+                            PFUser.current()?["name"] = userId["name"]
+                            PFUser.current()?["email"] = userId["email"]
+                            PFUser.current()?.saveInBackground()
+                        }
+                        else {
+                            print(error)
+                        }
+                    })
+                    
+                    let profilePic = "https://graph.facebook.com/" + realId + "/picture?type=large"
+                    
+                    if let profileUrl = URL(string: profilePic) {
+                        
+                        guard let data = try? Data(contentsOf: profileUrl) else {return}
+                        self.FBProfilePic.isHidden = false
+                        self.FBProfilePic.image = UIImage(data: data)
+                    }
                 }
             }
         })
         connection.start()
     }
+    
 }
+
+   
