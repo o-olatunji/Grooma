@@ -73,6 +73,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="iQR-yE-hbX"/>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mJH-f6-TVR">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="8Gx-HT-4UV"/>
@@ -87,21 +88,29 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="iQR-yE-hbX" firstAttribute="leading" secondItem="UaX-2D-dXl" secondAttribute="leading" id="0yT-sP-sdb"/>
+                            <constraint firstItem="iQR-yE-hbX" firstAttribute="top" secondItem="UaX-2D-dXl" secondAttribute="top" id="1Ks-2g-EJs"/>
                             <constraint firstItem="mJH-f6-TVR" firstAttribute="leading" secondItem="UaX-2D-dXl" secondAttribute="leadingMargin" constant="4" id="1uS-g9-paM"/>
+                            <constraint firstItem="iQR-yE-hbX" firstAttribute="centerY" secondItem="UaX-2D-dXl" secondAttribute="centerY" id="2gq-Zi-tuJ"/>
                             <constraint firstItem="Xbr-3s-3pw" firstAttribute="bottom" secondItem="mJH-f6-TVR" secondAttribute="bottom" id="8Uw-qH-1nl"/>
                             <constraint firstItem="Xbr-3s-3pw" firstAttribute="trailing" secondItem="mJH-f6-TVR" secondAttribute="trailing" id="CfE-rx-NZ0"/>
                             <constraint firstItem="Xbr-3s-3pw" firstAttribute="top" secondItem="mJH-f6-TVR" secondAttribute="top" id="D0S-rS-ygK"/>
                             <constraint firstItem="Xbr-3s-3pw" firstAttribute="leading" secondItem="mJH-f6-TVR" secondAttribute="leading" id="JTa-ZY-hV6"/>
                             <constraint firstItem="mJH-f6-TVR" firstAttribute="top" secondItem="63L-VR-qUE" secondAttribute="bottom" constant="8" id="PzX-FK-LAD"/>
+                            <constraint firstItem="7mz-1k-AJZ" firstAttribute="top" secondItem="iQR-yE-hbX" secondAttribute="bottom" id="Wyj-sI-6hx"/>
+                            <constraint firstItem="iQR-yE-hbX" firstAttribute="centerX" secondItem="UaX-2D-dXl" secondAttribute="centerX" id="bLb-fe-CSq"/>
+                            <constraint firstAttribute="trailing" secondItem="iQR-yE-hbX" secondAttribute="trailing" id="pAC-mU-hbo"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="7AY-eJ-UMq"/>
                     <connections>
                         <outlet property="FBProfilePic" destination="mJH-f6-TVR" id="rXS-Bc-Lpx"/>
+                        <outlet property="mapView" destination="iQR-yE-hbX" id="KSw-gy-jvu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v1V-IF-Wff" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="839.20000000000005" y="124.58770614692655"/>
+            <point key="canvasLocation" x="1778.4000000000001" y="124.58770614692655"/>
         </scene>
     </scenes>
 </document>
