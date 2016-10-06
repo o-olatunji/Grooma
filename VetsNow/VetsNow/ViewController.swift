@@ -13,13 +13,13 @@ import FBSDKCoreKit
 
 class ViewController: UIViewController {
     
-    var myBool = false
+    //var myBool = false
     
     @IBOutlet weak var FBButtonAppearance: UIButton!
     
     @IBAction func FBLogInButton(_ sender: AnyObject) {
         
-        self.myBool = true
+        //self.myBool = true
         
         let permissions = ["public_profile","email"]
         
@@ -42,30 +42,27 @@ class ViewController: UIViewController {
         }
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        
-        //        if (FBSDKAccessToken.current() != nil) {
-        //
-        //            performSegue(withIdentifier: "signIn", sender: self)
-        //        }
-        
-        if myBool == true {
-            
-            performSegue(withIdentifier: "signIn", sender: self)
-        }
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        FBButtonAppearance.layer.cornerRadius = 25
+        FBButtonAppearance.layer.cornerRadius = 9
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        if (FBSDKAccessToken.current() != nil) {
+            performSegue(withIdentifier: "signIn", sender: self)
+        }
+        
+//                if myBool == true {
+//        
+//                    performSegue(withIdentifier: "signIn", sender: self)
+//                }
+    }
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
-    let monster = true
-    
 }
