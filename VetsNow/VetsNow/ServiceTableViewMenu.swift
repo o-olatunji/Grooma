@@ -8,44 +8,47 @@
 
 import UIKit
 import SideMenu
+import Parse
 
-class ServiceTableViewMenu: UITableViewController {
-    var services:[String] = ["Ear Cleaning:$18", "Wash: $20", "Full Grooming: $20","Flea & Tick Search: $20"]
+var profileImage: UIImage?
+
+class ServiceTableViewMenu: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    @IBOutlet weak var menuTable: UITableView!
+    @IBOutlet weak var profilePicUser: UIImageView!
+    
+    var services:[String] = ["Your Pet", "Favorites", "Log Out"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    SideMenuManager.menuFadeStatusBar = false
-
-}
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        menuTable.delegate = self
+        menuTable.dataSource = self
+        
+        SideMenuManager.menuFadeStatusBar = false
+        SideMenuManager.menuPresentMode = .menuDissolveIn
+        SideMenuManager.menuAnimationPresentDuration = 0.7
+        
+        profilePicUser.image = profileImage
     }
     
-    // MARK: - Table view data source
-    
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
+    func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return services.count
     }
     
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        cell.textLabel?.textColor = UIColor.black
-
-        cell.textLabel?.text = services[indexPath.row]
-        
-        return cell
+        if let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? MenuItemTableViewCell {
+            
+            cell.menuItem.textColor = UIColor.black
+            cell.menuItem.text = services[indexPath.row]
+            
+        }
+        return UITableViewCell()
     }
     
-
 }
-

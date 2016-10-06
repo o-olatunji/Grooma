@@ -14,17 +14,20 @@ import ParseFacebookUtilsV4
 import MapKit
 import CoreLocation
 
-class Home : UIViewController, CLLocationManagerDelegate    {
+
+class Home : UIViewController, CLLocationManagerDelegate , MKMapViewDelegate   {
+    
+    @IBOutlet weak var logOutButton: UIButton!
+    
+    @IBAction func logOutAction(_ sender: AnyObject) {
+        
+        PFUser.logOut()
+        self.dismiss(animated: true, completion: nil)
+        
+        
+    }
     
     @IBOutlet weak var FBProfilePic: UIImageView!
-    
-    override func viewDidAppear(_ animated: Bool) {
-        
-        getUserInfoFromFB()
-        
-        FBProfilePic.layer.cornerRadius = 25
-        FBProfilePic.layer.masksToBounds = true
-    }
     
     func getUserInfoFromFB(){
         
@@ -39,30 +42,28 @@ class Home : UIViewController, CLLocationManagerDelegate    {
                     print(error)
                     print(conn)
                 }
-                    
                 else if let result = result {
                     
                     let userId = result as! NSDictionary
                     let realId = userId["id"] as! String
                     
-                    PFUser.current()?.saveInBackground(block: { (Bool, error) in
+                    PFUser.current()?["name"] = userId["name"]
+                    PFUser.current()?["email"] = userId["email"]
+                    PFUser.current()?.saveInBackground(block: { (true, error) in
                         if error != nil {
-                            PFUser.current()?["name"] = userId["name"]
-                            PFUser.current()?["email"] = userId["email"]
-                            PFUser.current()?.saveInBackground()
+                            try! PFUser.current()?.save()
                         }
                         else {
                             print(error)
                         }
                     })
-                    
                     let profilePic = "https://graph.facebook.com/" + realId + "/picture?type=large"
                     
                     if let profileUrl = URL(string: profilePic) {
-                        
                         guard let data = try? Data(contentsOf: profileUrl) else {return}
                         self.FBProfilePic.isHidden = false
                         self.FBProfilePic.image = UIImage(data: data)
+                        profileImage = UIImage(data: data)
                     }
                 }
             }
@@ -70,116 +71,67 @@ class Home : UIViewController, CLLocationManagerDelegate    {
         connection.start()
     }
     
-// ----- MAP -----
-
+    // ----- MAP -----//
+    
     @IBOutlet weak var mapView: MKMapView!
     
     var selectedPin: MKPlacemark? = nil
     var resultSearchController: UISearchController? = nil
-    let locationManager = CLLocationManager()
+    var locationManager : CLLocationManager!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         mapView.delegate = self
-        self.locationManager.delegate = self
-        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        self.locationManager.requestWhenInUseAuthorization()
-        self.locationManager.startUpdatingLocation()
-        self.mapView.showsUserLocation = true
         
-       // let locationSearchTable = storyboard!.instantiateViewController(withIdentifier: "LocationSearchTable") as!LocationSearchTable
-        //resultSearchController = UISearchController(searchResultsController: locationSearchTable)
-      //  resultSearchController?.searchResultsUpdater = locationSearchTable
-        
-        guard let searchBar = resultSearchController?.searchBar else { return }
-        searchBar.sizeToFit()
-        searchBar.placeholder = "Search for places"
-        navigationItem.titleView = resultSearchController?.searchBar
-        
-        resultSearchController?.hidesNavigationBarDuringPresentation = false
-        resultSearchController?.dimsBackgroundDuringPresentation = true
-        definesPresentationContext = true
-        
-        //this passes along a handle of the mapView from the main View Controller onto the locationSearchTable
-        
+        locationManager = CLLocationManager()
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.distanceFilter = kCLDistanceFilterNone
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
     }
     
-    func getDirection() {
-        if let selectedPin = selectedPin {
-            let mapItem = MKMapItem(placemark: selectedPin)
-            let launchOptions = [MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeDriving]
-            mapItem.openInMaps(launchOptions: launchOptions)
-        }
+    override func viewDidAppear(_ animated: Bool) {
+        
+        getUserInfoFromFB()
+        
+        logOutButton.layer.cornerRadius = 15
+        logOutButton.layer.borderWidth = 2
+        logOutButton.layer.masksToBounds = true
+        
+        FBProfilePic.layer.cornerRadius = 25
+        FBProfilePic.layer.borderWidth = 2
+        FBProfilePic.layer.masksToBounds = true
+        
+        //Create 2D coordiantes & set region:
+        let location = locationManager.location
+        let center = CLLocationCoordinate2D(latitude: location!.coordinate.latitude, longitude: location!.coordinate.longitude)
+        let latDelta :CLLocationDegrees = 0.05
+        let longDelta: CLLocationDegrees = 0.05
+        let span : MKCoordinateSpan = MKCoordinateSpanMake(latDelta, longDelta)
+        let location2:CLLocationCoordinate2D = CLLocationCoordinate2D(latitude: (location?.coordinate.latitude)!, longitude: (location?.coordinate.longitude)!)
+        let region : MKCoordinateRegion = MKCoordinateRegionMake(location2, span)
+        mapView.setRegion(region,animated: true)
+        
+        //Create Annotation:
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = center
+        mapView.addAnnotation(annotation)
     }
     
-    override func didReceiveMemoryWarning() {
-        //super.didReceiveMemoryWarning()
-        //Dispose of any resources that can be recreated
-    }
-    
-    //Mark: - Location Delegate Methods
+    //Location Delegate Methods
     
     private func locationManager(manager: CLLocationManager, didUpdateLocation locations: [CLLocation]) {
         
-        let location = locations.last
-        let center = CLLocationCoordinate2D(latitude: location!.coordinate.latitude, longitude: location!.coordinate.longitude)
-        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 1, longitudeDelta: 1))
-        
-        mapView.setRegion(region, animated: true)
         locationManager.stopUpdatingLocation()
-        
-        
     }
     
     private func locationManager(manager: CLLocationManager, didFailWithError error : NSError) {
         print ("Errors:" + error.localizedDescription)
     }
     
-}
-
-extension Home  {
-    func dropPingZoomIn(placemark: MKPlacemark) {
-        //cache the pin
-        selectedPin = placemark
-        //clear existing pins
-        mapView.removeAnnotations(mapView.annotations)
-        let annotation = MKPointAnnotation()
-        annotation.coordinate = placemark.coordinate
-        annotation.title = placemark.name
-        if let city = placemark.locality,
-            let state = placemark.administrativeArea {
-            annotation.subtitle = "\(city), \(state)"
-        }
-        mapView.addAnnotation(annotation)
-        let span = MKCoordinateSpanMake(0.05, 0.05)
-        let region = MKCoordinateRegionMake(placemark.coordinate, span)
-        mapView.setRegion(region,animated: true)
+    override func viewDidDisappear(_ animated: Bool) {
     }
+    
 }
-
-extension Home: MKMapViewDelegate {
-    @objc(mapView: viewForAnnotation:) func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
-        if annotation is MKUserLocation {
-            //return nil so map view draws "blue dot" for standard user location
-            return nil
-        }
-        let reuseId = "pin"
-        var pinView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseId) as? MKPinAnnotationView
-        pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: reuseId)
-        if #available(iOS 9.0, *) {
-            pinView?.pinTintColor = UIColor.orange
-        } else {
-            // Fallback on earlier versions
-        }
-        pinView?.canShowCallout = true
-        let smallSquard = CGSize(width: 30, height: 30)
-        let button = UIButton(frame: CGRect(origin: CGPoint.zero, size: smallSquard))
-        button.setBackgroundImage(UIImage(named: "car"), for: .normal)
-        //button.addTarget(self, action: Selector(("getDirections")), for: .touchUpInside)
-        button.addTarget(self, action: #selector (getDirection), for: .touchUpInside)
-        pinView?.leftCalloutAccessoryView = button
-        return pinView
-    }
-}
-   

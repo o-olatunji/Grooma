@@ -14,29 +14,21 @@ class VetSignViewController : UIViewController {
     
     @IBAction func signUpGroomer(_ sender: AnyObject) {
         
+        view.endEditing(true)
+
         myMethod()
         
         groomerName.text?.removeAll()
         groomerCertificate.text?.removeAll()
         groomerPassword.text?.removeAll()
         grommerEmail.text?.removeAll()
-        
-        
-}
+    }
+    
     @IBOutlet weak var groomerName: UITextField!
-    
     @IBOutlet weak var grommerEmail: UITextField!
-    
     @IBOutlet weak var groomerPassword: UITextField!
-    
     @IBOutlet weak var groomerCertificate: UITextField!
     
-    
-    override func viewDidLoad() {
-        
-       
-        
-    }
     func myMethod() {
         let user = PFUser()
         user.username = groomerName.text
@@ -51,16 +43,13 @@ class VetSignViewController : UIViewController {
             if let error = errorr {
                 
                 _ = ErrorUserInfoKey(rawValue: String())
-                
                 print(error, user)
             }
             else {
-                
                 print("WOOT")
             }
         }
     }
-    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
     }
