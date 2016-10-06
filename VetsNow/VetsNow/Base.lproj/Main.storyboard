@@ -3,39 +3,60 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Groomer Or Owner-->
         <scene sceneID="gWx-j3-xfw">
             <objects>
-                <viewController id="n2Y-ym-fIq" sceneMemberID="viewController">
+                <viewController id="n2Y-ym-fIq" customClass="GroomerOrOwner" customModule="VetsNow" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jgz-cV-Aff"/>
                         <viewControllerLayoutGuide type="bottom" id="eDn-to-tul"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="LHe-4T-3el">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="LHe-4T-3el">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bD1-00-Wtf">
-                                <frame key="frameInset" minX="91" minY="264" width="232" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="groomnowimage" translatesAutoresizingMaskIntoConstraints="NO" id="g8y-Ha-muM"/>
+                            <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QDd-mJ-PQ1">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grooma" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ryd-Aa-imd">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="241" id="1MX-pE-vts"/>
+                                            <constraint firstAttribute="height" constant="112" id="o7m-st-Bcx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="KohinoorDevanagari-Regular" family="Kohinoor Devanagari" pointSize="50"/>
+                                        <color key="textColor" red="0.7725490196" green="0.93725490199999995" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Ryd-Aa-imd" firstAttribute="leading" secondItem="QDd-mJ-PQ1" secondAttribute="leading" constant="87" id="5tj-hl-B90"/>
+                                    <constraint firstAttribute="bottom" secondItem="Ryd-Aa-imd" secondAttribute="bottom" constant="506" id="8cg-X6-Fm4"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ryd-Aa-imd" secondAttribute="trailing" constant="86" id="sFb-9j-7NG"/>
+                                    <constraint firstItem="Ryd-Aa-imd" firstAttribute="top" secondItem="QDd-mJ-PQ1" secondAttribute="top" constant="118" id="vPj-gj-5eV"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bD1-00-Wtf">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="92" id="TRI-OU-I42"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="25"/>
                                 <state key="normal" title="Pet Owner">
-                                    <color key="titleColor" red="0.5921008874" green="0.94353321339999996" blue="0.3083701177" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.46666666666666667" green="0.63529411764705879" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="ChZ-ib-QNn"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b5G-n4-VO1">
-                                <frame key="frameInset" minX="91" minY="393" width="232" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.5921008874" green="0.94353321339999996" blue="0.3083701177" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b5G-n4-VO1">
+                                <color key="backgroundColor" red="0.46666666670000001" green="0.63529411759999999" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="25"/>
-                                <state key="normal" title="Vet">
+                                <state key="normal" title="Groomer">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -44,14 +65,35 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.78819663556639508" green="1" blue="0.83919048338042646" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="bD1-00-Wtf" firstAttribute="top" secondItem="jgz-cV-Aff" secondAttribute="bottom" constant="356" id="1m6-Bv-1fB"/>
+                            <constraint firstItem="bD1-00-Wtf" firstAttribute="leading" secondItem="b5G-n4-VO1" secondAttribute="leading" id="3jI-cP-z26"/>
+                            <constraint firstItem="QDd-mJ-PQ1" firstAttribute="height" secondItem="g8y-Ha-muM" secondAttribute="height" id="4lV-NQ-XGL"/>
+                            <constraint firstItem="QDd-mJ-PQ1" firstAttribute="centerX" secondItem="g8y-Ha-muM" secondAttribute="centerX" id="AZ5-wd-iuC"/>
+                            <constraint firstItem="g8y-Ha-muM" firstAttribute="height" secondItem="LHe-4T-3el" secondAttribute="height" id="F4b-9H-hmN"/>
+                            <constraint firstItem="g8y-Ha-muM" firstAttribute="centerY" secondItem="LHe-4T-3el" secondAttribute="centerY" id="FJP-Ur-zQn"/>
+                            <constraint firstItem="bD1-00-Wtf" firstAttribute="leading" secondItem="LHe-4T-3el" secondAttribute="leadingMargin" constant="71" id="RIs-IU-Fbt"/>
+                            <constraint firstItem="QDd-mJ-PQ1" firstAttribute="centerY" secondItem="g8y-Ha-muM" secondAttribute="centerY" id="TnH-29-0GX"/>
+                            <constraint firstItem="QDd-mJ-PQ1" firstAttribute="width" secondItem="g8y-Ha-muM" secondAttribute="width" id="aRS-Vs-tti"/>
+                            <constraint firstItem="b5G-n4-VO1" firstAttribute="top" secondItem="bD1-00-Wtf" secondAttribute="bottom" constant="32" id="hbw-PR-nvw"/>
+                            <constraint firstItem="g8y-Ha-muM" firstAttribute="width" secondItem="LHe-4T-3el" secondAttribute="width" id="mA3-Yd-nad"/>
+                            <constraint firstItem="g8y-Ha-muM" firstAttribute="centerX" secondItem="LHe-4T-3el" secondAttribute="centerX" id="pwW-Fi-jzq"/>
+                            <constraint firstItem="eDn-to-tul" firstAttribute="top" secondItem="b5G-n4-VO1" secondAttribute="bottom" constant="100" id="qqy-LV-ccI"/>
+                            <constraint firstItem="bD1-00-Wtf" firstAttribute="trailing" secondItem="b5G-n4-VO1" secondAttribute="trailing" id="stH-Q9-Tgq"/>
+                            <constraint firstItem="bD1-00-Wtf" firstAttribute="centerX" secondItem="g8y-Ha-muM" secondAttribute="centerX" id="um9-dU-UAk"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="qXm-y9-BCf"/>
+                    <connections>
+                        <outlet property="groomer" destination="b5G-n4-VO1" id="8uy-PG-h8G"/>
+                        <outlet property="petOwner" destination="bD1-00-Wtf" id="0GC-Nc-Oes"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FmF-GN-yd5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-148" y="124.58770614692655"/>
+            <point key="canvasLocation" x="-149.27536231884059" y="123.91304347826087"/>
         </scene>
-        <!--View Controller-->
+        <!--Sign In !-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VetsNow" customModuleProvider="target" sceneMemberID="viewController">
@@ -59,14 +101,18 @@
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VetsNowImage3" translatesAutoresizingMaskIntoConstraints="NO" id="Bd4-Ed-yj5"/>
+                            <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ovx-34-uRM">
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgy-fR-t2n">
-                                <color key="backgroundColor" red="0.47277579212855864" green="0.55962733741819704" blue="0.89804892015706805" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.46666666670000001" green="0.63529411759999999" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="337" id="3TC-k5-1ex"/>
+                                    <constraint firstAttribute="width" constant="374" id="3TC-k5-1ex"/>
                                     <constraint firstAttribute="height" constant="87" id="y6F-if-5KB"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
@@ -78,20 +124,29 @@
                         </subviews>
                         <color key="backgroundColor" red="0.78819663559999997" green="1" blue="0.83919048340000002" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dgy-fR-t2n" secondAttribute="bottom" constant="290" id="54r-3l-QD3"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dgy-fR-t2n" secondAttribute="bottom" constant="103" id="54r-3l-QD3"/>
+                            <constraint firstItem="Bd4-Ed-yj5" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="5lW-2r-2tZ"/>
                             <constraint firstItem="dgy-fR-t2n" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Jo-yk-HNU"/>
+                            <constraint firstItem="ovx-34-uRM" firstAttribute="centerY" secondItem="Bd4-Ed-yj5" secondAttribute="centerY" id="B7G-b4-JoY"/>
+                            <constraint firstItem="ovx-34-uRM" firstAttribute="width" secondItem="Bd4-Ed-yj5" secondAttribute="width" id="E35-ul-Aid"/>
+                            <constraint firstItem="Bd4-Ed-yj5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MAB-yK-N33"/>
+                            <constraint firstItem="Bd4-Ed-yj5" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="Vez-Z6-rFh"/>
+                            <constraint firstItem="ovx-34-uRM" firstAttribute="height" secondItem="Bd4-Ed-yj5" secondAttribute="height" id="k2L-hS-gMp"/>
+                            <constraint firstItem="ovx-34-uRM" firstAttribute="centerX" secondItem="Bd4-Ed-yj5" secondAttribute="centerX" id="yNi-hK-shL"/>
+                            <constraint firstItem="Bd4-Ed-yj5" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yjv-GK-eHV"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Sign In !" id="7Xd-uh-7k7"/>
                     <connections>
                         <outlet property="FBButtonAppearance" destination="dgy-fR-t2n" id="sPi-hv-Exr"/>
-                        <segue destination="NrY-va-Sv2" kind="show" identifier="signIn" id="KMS-Ap-8zE"/>
+                        <segue destination="NrY-va-Sv2" kind="presentation" identifier="signIn" modalTransitionStyle="flipHorizontal" id="KMS-Ap-8zE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="760.79999999999995" y="124.58770614692655"/>
+            <point key="canvasLocation" x="787" y="124"/>
         </scene>
-        <!--Vet Sign View Controller-->
+        <!--Groomer Sign Up!-->
         <scene sceneID="b6F-nc-qgV">
             <objects>
                 <viewController id="k6Y-Ys-atZ" customClass="VetSignViewController" customModule="VetsNow" customModuleProvider="target" sceneMemberID="viewController">
@@ -99,32 +154,40 @@
                         <viewControllerLayoutGuide type="top" id="DH9-9n-moA"/>
                         <viewControllerLayoutGuide type="bottom" id="nRa-4g-hdp"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="KDR-ew-ulm">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="KDR-ew-ulm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9wt-Oz-anp">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="VetsNowImage3" translatesAutoresizingMaskIntoConstraints="NO" id="0MK-gI-VeW"/>
+                            <visualEffectView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="odS-4G-dka">
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="dm4-FM-gq5">
+                                    <frame key="frameInset"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9wt-Oz-anp">
                                 <frame key="frameInset" minX="98" minY="224" width="219" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mqg-MH-OCq">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mqg-MH-OCq">
                                 <frame key="frameInset" minX="98" minY="285" width="219" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XpN-YW-HOt">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XpN-YW-HOt">
                                 <frame key="frameInset" minX="98" minY="353" width="219" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mj1-cT-ZgP">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Are you certified ?" textAlignment="natural" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="mj1-cT-ZgP">
                                 <frame key="frameInset" minX="98" minY="423" width="219" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
@@ -134,7 +197,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pDA-Nk-Mk4">
                                 <frame key="frameInset" minX="98" minY="489" width="219" height="37"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.5921008874" green="0.94353321339999996" blue="0.3083701177" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.46666666670000001" green="0.63529411759999999" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
                                 <state key="normal" title="Sign Up">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -148,12 +211,23 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Already have an account? Log In"/>
                                 <connections>
-                                    <segue destination="7TL-PB-HYi" kind="show" id="pTZ-rJ-V9e"/>
+                                    <segue destination="7TL-PB-HYi" kind="show" id="tJv-VH-QPe"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.78819663559999997" green="1" blue="0.83919048340000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="odS-4G-dka" firstAttribute="width" secondItem="0MK-gI-VeW" secondAttribute="width" id="5dn-2Q-V2k"/>
+                            <constraint firstItem="0MK-gI-VeW" firstAttribute="width" secondItem="KDR-ew-ulm" secondAttribute="width" id="MLU-AD-jCh"/>
+                            <constraint firstItem="odS-4G-dka" firstAttribute="centerX" secondItem="0MK-gI-VeW" secondAttribute="centerX" id="Psc-8f-45c"/>
+                            <constraint firstItem="0MK-gI-VeW" firstAttribute="centerX" secondItem="KDR-ew-ulm" secondAttribute="centerX" id="fnf-Hn-y9t"/>
+                            <constraint firstItem="odS-4G-dka" firstAttribute="height" secondItem="0MK-gI-VeW" secondAttribute="height" id="jAW-TE-P7s"/>
+                            <constraint firstItem="0MK-gI-VeW" firstAttribute="height" secondItem="KDR-ew-ulm" secondAttribute="height" id="p6U-8W-ELl"/>
+                            <constraint firstItem="odS-4G-dka" firstAttribute="centerY" secondItem="0MK-gI-VeW" secondAttribute="centerY" id="s2P-ik-LDM"/>
+                            <constraint firstItem="0MK-gI-VeW" firstAttribute="centerY" secondItem="KDR-ew-ulm" secondAttribute="centerY" id="spB-c5-tME"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Groomer Sign Up!" id="oKi-QE-c33"/>
                     <connections>
                         <outlet property="grommerEmail" destination="mqg-MH-OCq" id="aTj-BD-S2E"/>
                         <outlet property="groomerCertificate" destination="mj1-cT-ZgP" id="YXh-Ka-Xjm"/>
@@ -163,7 +237,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BIZ-PU-5aG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-178.2608695652174" y="911.41304347826099"/>
+            <point key="canvasLocation" x="-149" y="923"/>
         </scene>
         <!--VendorLogIn-->
         <scene sceneID="NQF-0R-L4s">
@@ -171,7 +245,7 @@
                 <viewControllerPlaceholder storyboardName="VendorLogIn" id="7TL-PB-HYi" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dfi-BT-hbq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-178" y="1596"/>
+            <point key="canvasLocation" x="-149" y="1379"/>
         </scene>
         <!--Main-->
         <scene sceneID="gp1-6r-9cA">
@@ -179,7 +253,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="Main" storyboardName="PetOwnerHome" referencedIdentifier="Main" id="NrY-va-Sv2" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FHj-tG-pH9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1777.5999999999999" y="124.13793103448276"/>
+            <point key="canvasLocation" x="1409" y="124"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="eKZ-aP-fQc">
@@ -200,4 +274,8 @@
             <point key="canvasLocation" x="-1087.2" y="124.58770614692655"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="VetsNowImage3" width="4323" height="2882"/>
+        <image name="groomnowimage" width="890" height="593"/>
+    </resources>
 </document>

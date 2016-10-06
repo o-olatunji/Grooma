@@ -1,1396 +1,580 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>02042677CA62BE222ABE1B18</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-VetsNow/Pods-VetsNow-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>0EB2529289C54E0AE4C161B8</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-VetsNow.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-VetsNow/Pods-VetsNow.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>210FC65BFF78084200B66158</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-VetsNow.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-VetsNow/Pods-VetsNow.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>334D2310887F64DB77971BB2</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B348DCE39ED574232F441A66</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>6BD869735D368DAE13F75E84</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>210FC65BFF78084200B66158</string>
-				<string>0EB2529289C54E0AE4C161B8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>84626F281D9EE68500048401</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>84626F291D9EE68500048401</key>
-		<dict>
-			<key>fileRef</key>
-			<string>84626F281D9EE68500048401</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>848CC1E01DA3025600FDC6E6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>848CC1E11DA3025600FDC6E6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>VendorLogIn.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>848CC1E11DA3025600FDC6E6</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/VendorLogIn.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>848CC1E21DA3025600FDC6E6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>848CC1E01DA3025600FDC6E6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>848CC1E31DA302BC00FDC6E6</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>path</key>
-			<string>PetOwnerHome.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>848CC1E41DA302BC00FDC6E6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>848CC1E31DA302BC00FDC6E6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>848CC1E51DA302E500FDC6E6</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>848FE86C1D9B90FE00CD52FF</string>
-				<string>848CC1E31DA302BC00FDC6E6</string>
-				<string>848CC1E01DA3025600FDC6E6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Storyboards</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>848CC1E61DA3040F00FDC6E6</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>VendorLogInViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>848CC1E71DA3040F00FDC6E6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>848CC1E61DA3040F00FDC6E6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>848CC1E81DA31D8900FDC6E6</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>ServiceTableViewMenu.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>848CC1E91DA31D8900FDC6E6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>848CC1E81DA31D8900FDC6E6</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>848FE85C1D9B90FD00CD52FF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>848FE8AF1D9B9B7100CD52FF</string>
-				<string>848FE8671D9B90FE00CD52FF</string>
-				<string>848FE88D1D9B998A00CD52FF</string>
-				<string>848FE8661D9B90FE00CD52FF</string>
-				<string>6BD869735D368DAE13F75E84</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>848FE85D1D9B90FD00CD52FF</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0800</string>
-				<key>LastUpgradeCheck</key>
-				<string>0800</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Miles Fishman</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>848FE8641D9B90FE00CD52FF</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>8.0</string>
-						<key>DevelopmentTeam</key>
-						<string>WMVNZYDS86</string>
-						<key>LastSwiftMigration</key>
-						<string>0800</string>
-						<key>ProvisioningStyle</key>
-						<string>Automatic</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>848FE8601D9B90FD00CD52FF</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>848FE85C1D9B90FD00CD52FF</string>
-			<key>productRefGroup</key>
-			<string>848FE8661D9B90FE00CD52FF</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>848FE8641D9B90FE00CD52FF</string>
-			</array>
-		</dict>
-		<key>848FE8601D9B90FD00CD52FF</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>848FE8751D9B90FE00CD52FF</string>
-				<string>848FE8761D9B90FE00CD52FF</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>848FE8611D9B90FE00CD52FF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>848CC1E71DA3040F00FDC6E6</string>
-				<string>848FE86B1D9B90FE00CD52FF</string>
-				<string>84A5B6E91DA2371200C8E2FA</string>
-				<string>84E5A7C11D9BD8AF0032EEE8</string>
-				<string>848CC1E91DA31D8900FDC6E6</string>
-				<string>848FE8691D9B90FE00CD52FF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>848FE8621D9B90FE00CD52FF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>84626F291D9EE68500048401</string>
-				<string>848FE8BA1D9BADC300CD52FF</string>
-				<string>848FE8991D9B99FC00CD52FF</string>
-				<string>848FE89A1D9B99FC00CD52FF</string>
-				<string>848FE8AC1D9B9B3E00CD52FF</string>
-				<string>848FE89B1D9B99FC00CD52FF</string>
-				<string>84E5A7BF1D9BB2730032EEE8</string>
-				<string>848FE8AD1D9B9B3E00CD52FF</string>
-				<string>848FE89C1D9B99FC00CD52FF</string>
-				<string>848FE8AE1D9B9B3E00CD52FF</string>
-				<string>848FE89D1D9B99FC00CD52FF</string>
-				<string>848FE89E1D9B99FC00CD52FF</string>
-				<string>848FE89F1D9B99FC00CD52FF</string>
-				<string>848FE8A01D9B99FC00CD52FF</string>
-				<string>848FE8A91D9B9B3E00CD52FF</string>
-				<string>848FE8A11D9B99FC00CD52FF</string>
-				<string>848FE8BB1D9BADC300CD52FF</string>
-				<string>848FE8B91D9BADC300CD52FF</string>
-				<string>848FE8AA1D9B9B3E00CD52FF</string>
-				<string>848FE88F1D9B998A00CD52FF</string>
-				<string>334D2310887F64DB77971BB2</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>848FE8631D9B90FE00CD52FF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>848FE8731D9B90FE00CD52FF</string>
-				<string>848CC1E21DA3025600FDC6E6</string>
-				<string>848FE8701D9B90FE00CD52FF</string>
-				<string>848CC1E41DA302BC00FDC6E6</string>
-				<string>848FE8B01D9B9B7100CD52FF</string>
-				<string>848FE86E1D9B90FE00CD52FF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>848FE8641D9B90FE00CD52FF</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>848FE8771D9B90FE00CD52FF</string>
-			<key>buildPhases</key>
-			<array>
-				<string>FA736B0AADE7CB52F8ACBC18</string>
-				<string>848FE8611D9B90FE00CD52FF</string>
-				<string>848FE8621D9B90FE00CD52FF</string>
-				<string>848FE8631D9B90FE00CD52FF</string>
-				<string>02042677CA62BE222ABE1B18</string>
-				<string>8E9DF73FE65FE2BE52D94A5F</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>VetsNow</string>
-			<key>productName</key>
-			<string>VetsNow</string>
-			<key>productReference</key>
-			<string>848FE8651D9B90FE00CD52FF</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>848FE8651D9B90FE00CD52FF</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>VetsNow.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>848FE8661D9B90FE00CD52FF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>848FE8651D9B90FE00CD52FF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>848FE8671D9B90FE00CD52FF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>848CC1E51DA302E500FDC6E6</string>
-				<string>848FE8B51D9BAA1600CD52FF</string>
-				<string>848FE8681D9B90FE00CD52FF</string>
-				<string>848FE86A1D9B90FE00CD52FF</string>
-				<string>848FE86F1D9B90FE00CD52FF</string>
-				<string>848FE8711D9B90FE00CD52FF</string>
-				<string>848FE8741D9B90FE00CD52FF</string>
-				<string>84E5A7C01D9BD8AF0032EEE8</string>
-				<string>84A5B6E81DA2371200C8E2FA</string>
-				<string>848CC1E61DA3040F00FDC6E6</string>
-				<string>848CC1E81DA31D8900FDC6E6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>VetsNow</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>848FE8681D9B90FE00CD52FF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>AppDelegate.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>848FE8691D9B90FE00CD52FF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>848FE8681D9B90FE00CD52FF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>848FE86A1D9B90FE00CD52FF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>ViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>848FE86B1D9B90FE00CD52FF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>848FE86A1D9B90FE00CD52FF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>848FE86C1D9B90FE00CD52FF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>848FE86D1D9B90FE00CD52FF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>848FE86D1D9B90FE00CD52FF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>848FE86E1D9B90FE00CD52FF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>848FE86C1D9B90FE00CD52FF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>848FE86F1D9B90FE00CD52FF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Assets.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>848FE8701D9B90FE00CD52FF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>848FE86F1D9B90FE00CD52FF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>848FE8711D9B90FE00CD52FF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>848FE8721D9B90FE00CD52FF</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>848FE8721D9B90FE00CD52FF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>848FE8731D9B90FE00CD52FF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>848FE8711D9B90FE00CD52FF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>848FE8741D9B90FE00CD52FF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>848FE8751D9B90FE00CD52FF</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_DOCUMENTATION_COMMENTS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INFINITE_RECURSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_SUSPICIOUS_MOVES</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>ENABLE_TESTABILITY</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>10.0</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SWIFT_ACTIVE_COMPILATION_CONDITIONS</key>
-				<string>DEBUG</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>848FE8761D9B90FE00CD52FF</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_ANALYZER_NONNULL</key>
-				<string>YES</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_DOCUMENTATION_COMMENTS</key>
-				<string>YES</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INFINITE_RECURSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_SUSPICIOUS_MOVES</key>
-				<string>YES</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>10.0</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Owholemodule</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>848FE8771D9B90FE00CD52FF</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>848FE8781D9B90FE00CD52FF</string>
-				<string>848FE8791D9B90FE00CD52FF</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>848FE8781D9B90FE00CD52FF</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>210FC65BFF78084200B66158</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>DEVELOPMENT_TEAM</key>
-				<string>WMVNZYDS86</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>$(PROJECT_DIR)/parse-library-1</string>
-					<string>$(PROJECT_DIR)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>VetsNow/Info.plist</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.milesFishman.VetsNow</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PROVISIONING_PROFILE</key>
-				<string></string>
-				<key>PROVISIONING_PROFILE_SPECIFIER</key>
-				<string></string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>848FE8791D9B90FE00CD52FF</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>0EB2529289C54E0AE4C161B8</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>DEVELOPMENT_TEAM</key>
-				<string>WMVNZYDS86</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>$(PROJECT_DIR)/parse-library-1</string>
-					<string>$(PROJECT_DIR)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>VetsNow/Info.plist</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>com.milesFishman.VetsNow</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>PROVISIONING_PROFILE</key>
-				<string></string>
-				<key>PROVISIONING_PROFILE_SPECIFIER</key>
-				<string></string>
-				<key>SWIFT_VERSION</key>
-				<string>3.0</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>848FE88D1D9B998A00CD52FF</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>84626F281D9EE68500048401</string>
-				<string>84E5A7BE1D9BB2730032EEE8</string>
-				<string>848FE8B61D9BADC300CD52FF</string>
-				<string>848FE8B71D9BADC300CD52FF</string>
-				<string>848FE8B81D9BADC300CD52FF</string>
-				<string>848FE8A31D9B9B3E00CD52FF</string>
-				<string>848FE8A41D9B9B3E00CD52FF</string>
-				<string>848FE8A61D9B9B3E00CD52FF</string>
-				<string>848FE8A71D9B9B3E00CD52FF</string>
-				<string>848FE8A81D9B9B3E00CD52FF</string>
-				<string>848FE8901D9B99FC00CD52FF</string>
-				<string>848FE8911D9B99FC00CD52FF</string>
-				<string>848FE8921D9B99FC00CD52FF</string>
-				<string>848FE8931D9B99FC00CD52FF</string>
-				<string>848FE8941D9B99FC00CD52FF</string>
-				<string>848FE8951D9B99FC00CD52FF</string>
-				<string>848FE8961D9B99FC00CD52FF</string>
-				<string>848FE8971D9B99FC00CD52FF</string>
-				<string>848FE8981D9B99FC00CD52FF</string>
-				<string>848FE88E1D9B998A00CD52FF</string>
-				<string>B348DCE39ED574232F441A66</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>848FE88E1D9B998A00CD52FF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>AudioToolbox.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/AudioToolbox.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>848FE88F1D9B998A00CD52FF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>848FE88E1D9B998A00CD52FF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>848FE8901D9B99FC00CD52FF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CFNetwork.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CFNetwork.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>848FE8911D9B99FC00CD52FF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreGraphics.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreGraphics.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>848FE8921D9B99FC00CD52FF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreLocation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreLocation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>848FE8931D9B99FC00CD52FF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.text-based-dylib-definition</string>
-			<key>name</key>
-			<string>libsqlite3.tbd</string>
-			<key>path</key>
-			<string>usr/lib/libsqlite3.tbd</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>848FE8941D9B99FC00CD52FF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.text-based-dylib-definition</string>
-			<key>name</key>
-			<string>libz.tbd</string>
-			<key>path</key>
-			<string>usr/lib/libz.tbd</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>848FE8951D9B99FC00CD52FF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>QuartzCore.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/QuartzCore.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>848FE8961D9B99FC00CD52FF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Security.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Security.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>848FE8971D9B99FC00CD52FF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>StoreKit.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/StoreKit.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>848FE8981D9B99FC00CD52FF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>SystemConfiguration.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/SystemConfiguration.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>848FE8991D9B99FC00CD52FF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>848FE8901D9B99FC00CD52FF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>848FE89A1D9B99FC00CD52FF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>848FE8911D9B99FC00CD52FF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>848FE89B1D9B99FC00CD52FF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>848FE8921D9B99FC00CD52FF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>848FE89C1D9B99FC00CD52FF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>848FE8931D9B99FC00CD52FF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>848FE89D1D9B99FC00CD52FF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>848FE8941D9B99FC00CD52FF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>848FE89E1D9B99FC00CD52FF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>848FE8951D9B99FC00CD52FF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>848FE89F1D9B99FC00CD52FF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>848FE8961D9B99FC00CD52FF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>848FE8A01D9B99FC00CD52FF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>848FE8971D9B99FC00CD52FF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>848FE8A11D9B99FC00CD52FF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>848FE8981D9B99FC00CD52FF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>848FE8A31D9B9B3E00CD52FF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Bolts.framework</string>
-			<key>path</key>
-			<string>parse-library-1/Bolts.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>848FE8A41D9B9B3E00CD52FF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Parse.framework</string>
-			<key>path</key>
-			<string>parse-library-1/Parse.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>848FE8A61D9B9B3E00CD52FF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>ParseFacebookUtilsV4.framework</string>
-			<key>path</key>
-			<string>parse-library-1/ParseFacebookUtilsV4.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>848FE8A71D9B9B3E00CD52FF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>ParseTwitterUtils.framework</string>
-			<key>path</key>
-			<string>parse-library-1/ParseTwitterUtils.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>848FE8A81D9B9B3E00CD52FF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>ParseUI.framework</string>
-			<key>path</key>
-			<string>parse-library-1/ParseUI.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>848FE8A91D9B9B3E00CD52FF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>848FE8A31D9B9B3E00CD52FF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>848FE8AA1D9B9B3E00CD52FF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>848FE8A41D9B9B3E00CD52FF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>848FE8AC1D9B9B3E00CD52FF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>848FE8A61D9B9B3E00CD52FF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>848FE8AD1D9B9B3E00CD52FF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>848FE8A71D9B9B3E00CD52FF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>848FE8AE1D9B9B3E00CD52FF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>848FE8A81D9B9B3E00CD52FF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>848FE8AF1D9B9B7100CD52FF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder</string>
-			<key>path</key>
-			<string>parse-library-1</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>848FE8B01D9B9B7100CD52FF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>848FE8AF1D9B9B7100CD52FF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>848FE8B51D9BAA1600CD52FF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>VetHeaderParse.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>848FE8B61D9BADC300CD52FF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>path</key>
-			<string>FBSDKCoreKit.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>848FE8B71D9BADC300CD52FF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>path</key>
-			<string>FBSDKLoginKit.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>848FE8B81D9BADC300CD52FF</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>path</key>
-			<string>FBSDKShareKit.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>848FE8B91D9BADC300CD52FF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>848FE8B61D9BADC300CD52FF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>848FE8BA1D9BADC300CD52FF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>848FE8B71D9BADC300CD52FF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>848FE8BB1D9BADC300CD52FF</key>
-		<dict>
-			<key>fileRef</key>
-			<string>848FE8B81D9BADC300CD52FF</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>84A5B6E81DA2371200C8E2FA</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>VetSignViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>84A5B6E91DA2371200C8E2FA</key>
-		<dict>
-			<key>fileRef</key>
-			<string>84A5B6E81DA2371200C8E2FA</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>84E5A7BE1D9BB2730032EEE8</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>ParseFacebookUtils.framework</string>
-			<key>path</key>
-			<string>parse-library-1/ParseFacebookUtils.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>84E5A7BF1D9BB2730032EEE8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>84E5A7BE1D9BB2730032EEE8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>84E5A7C01D9BD8AF0032EEE8</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>Home.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>84E5A7C11D9BD8AF0032EEE8</key>
-		<dict>
-			<key>fileRef</key>
-			<string>84E5A7C01D9BD8AF0032EEE8</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>8E9DF73FE65FE2BE52D94A5F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-VetsNow/Pods-VetsNow-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>B348DCE39ED574232F441A66</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_VetsNow.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>FA736B0AADE7CB52F8ACBC18</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>[CP] Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [ $? != 0 ] ; then
-    # print error to STDERR
-    echo "error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation." &gt;&amp;2
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>848FE85D1D9B90FD00CD52FF</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		334D2310887F64DB77971BB2 /* Pods_VetsNow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B348DCE39ED574232F441A66 /* Pods_VetsNow.framework */; };
+		84626F291D9EE68500048401 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84626F281D9EE68500048401 /* Foundation.framework */; };
+		848CC1E21DA3025600FDC6E6 /* VendorLogIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848CC1E01DA3025600FDC6E6 /* VendorLogIn.storyboard */; };
+		848CC1E41DA302BC00FDC6E6 /* PetOwnerHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848CC1E31DA302BC00FDC6E6 /* PetOwnerHome.storyboard */; };
+		848CC1E71DA3040F00FDC6E6 /* VendorLogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848CC1E61DA3040F00FDC6E6 /* VendorLogInViewController.swift */; };
+		848CC1E91DA31D8900FDC6E6 /* ServiceTableViewMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848CC1E81DA31D8900FDC6E6 /* ServiceTableViewMenu.swift */; };
+		848FE8691D9B90FE00CD52FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FE8681D9B90FE00CD52FF /* AppDelegate.swift */; };
+		848FE86B1D9B90FE00CD52FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848FE86A1D9B90FE00CD52FF /* ViewController.swift */; };
+		848FE86E1D9B90FE00CD52FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848FE86C1D9B90FE00CD52FF /* Main.storyboard */; };
+		848FE8701D9B90FE00CD52FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 848FE86F1D9B90FE00CD52FF /* Assets.xcassets */; };
+		848FE8731D9B90FE00CD52FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848FE8711D9B90FE00CD52FF /* LaunchScreen.storyboard */; };
+		848FE88F1D9B998A00CD52FF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848FE88E1D9B998A00CD52FF /* AudioToolbox.framework */; };
+		848FE8991D9B99FC00CD52FF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848FE8901D9B99FC00CD52FF /* CFNetwork.framework */; };
+		848FE89A1D9B99FC00CD52FF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848FE8911D9B99FC00CD52FF /* CoreGraphics.framework */; };
+		848FE89B1D9B99FC00CD52FF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848FE8921D9B99FC00CD52FF /* CoreLocation.framework */; };
+		848FE89C1D9B99FC00CD52FF /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 848FE8931D9B99FC00CD52FF /* libsqlite3.tbd */; };
+		848FE89D1D9B99FC00CD52FF /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 848FE8941D9B99FC00CD52FF /* libz.tbd */; };
+		848FE89E1D9B99FC00CD52FF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848FE8951D9B99FC00CD52FF /* QuartzCore.framework */; };
+		848FE89F1D9B99FC00CD52FF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848FE8961D9B99FC00CD52FF /* Security.framework */; };
+		848FE8A01D9B99FC00CD52FF /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848FE8971D9B99FC00CD52FF /* StoreKit.framework */; };
+		848FE8A11D9B99FC00CD52FF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848FE8981D9B99FC00CD52FF /* SystemConfiguration.framework */; };
+		848FE8A91D9B9B3E00CD52FF /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848FE8A31D9B9B3E00CD52FF /* Bolts.framework */; };
+		848FE8AA1D9B9B3E00CD52FF /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848FE8A41D9B9B3E00CD52FF /* Parse.framework */; };
+		848FE8AC1D9B9B3E00CD52FF /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848FE8A61D9B9B3E00CD52FF /* ParseFacebookUtilsV4.framework */; };
+		848FE8AD1D9B9B3E00CD52FF /* ParseTwitterUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848FE8A71D9B9B3E00CD52FF /* ParseTwitterUtils.framework */; };
+		848FE8AE1D9B9B3E00CD52FF /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848FE8A81D9B9B3E00CD52FF /* ParseUI.framework */; };
+		848FE8B01D9B9B7100CD52FF /* parse-library-1 in Resources */ = {isa = PBXBuildFile; fileRef = 848FE8AF1D9B9B7100CD52FF /* parse-library-1 */; };
+		848FE8B91D9BADC300CD52FF /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848FE8B61D9BADC300CD52FF /* FBSDKCoreKit.framework */; };
+		848FE8BA1D9BADC300CD52FF /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848FE8B71D9BADC300CD52FF /* FBSDKLoginKit.framework */; };
+		848FE8BB1D9BADC300CD52FF /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848FE8B81D9BADC300CD52FF /* FBSDKShareKit.framework */; };
+		84A5B6E91DA2371200C8E2FA /* VetSignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A5B6E81DA2371200C8E2FA /* VetSignViewController.swift */; };
+		84E5A7BF1D9BB2730032EEE8 /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84E5A7BE1D9BB2730032EEE8 /* ParseFacebookUtils.framework */; };
+		84E5A7C11D9BD8AF0032EEE8 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E5A7C01D9BD8AF0032EEE8 /* Home.swift */; };
+		84FFB1BA1DA65D3A00C2C1A0 /* MenuPicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FFB1B91DA65D3A00C2C1A0 /* MenuPicCell.swift */; };
+		84FFB1BD1DA65F7100C2C1A0 /* MenuItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FFB1BC1DA65F7100C2C1A0 /* MenuItemTableViewCell.swift */; };
+		84FFB1EF1DA6E33400C2C1A0 /* GroomerOrOwner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FFB1EE1DA6E33400C2C1A0 /* GroomerOrOwner.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0EB2529289C54E0AE4C161B8 /* Pods-VetsNow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VetsNow.release.xcconfig"; path = "Pods/Target Support Files/Pods-VetsNow/Pods-VetsNow.release.xcconfig"; sourceTree = "<group>"; };
+		210FC65BFF78084200B66158 /* Pods-VetsNow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VetsNow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VetsNow/Pods-VetsNow.debug.xcconfig"; sourceTree = "<group>"; };
+		84626F281D9EE68500048401 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		848CC1E11DA3025600FDC6E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/VendorLogIn.storyboard; sourceTree = "<group>"; };
+		848CC1E31DA302BC00FDC6E6 /* PetOwnerHome.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PetOwnerHome.storyboard; sourceTree = "<group>"; };
+		848CC1E61DA3040F00FDC6E6 /* VendorLogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VendorLogInViewController.swift; sourceTree = "<group>"; };
+		848CC1E81DA31D8900FDC6E6 /* ServiceTableViewMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceTableViewMenu.swift; sourceTree = "<group>"; };
+		848FE8651D9B90FE00CD52FF /* VetsNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VetsNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		848FE8681D9B90FE00CD52FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		848FE86A1D9B90FE00CD52FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		848FE86D1D9B90FE00CD52FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		848FE86F1D9B90FE00CD52FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		848FE8721D9B90FE00CD52FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		848FE8741D9B90FE00CD52FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		848FE88E1D9B998A00CD52FF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		848FE8901D9B99FC00CD52FF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		848FE8911D9B99FC00CD52FF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		848FE8921D9B99FC00CD52FF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		848FE8931D9B99FC00CD52FF /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		848FE8941D9B99FC00CD52FF /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		848FE8951D9B99FC00CD52FF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		848FE8961D9B99FC00CD52FF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		848FE8971D9B99FC00CD52FF /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		848FE8981D9B99FC00CD52FF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		848FE8A31D9B9B3E00CD52FF /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "parse-library-1/Bolts.framework"; sourceTree = "<group>"; };
+		848FE8A41D9B9B3E00CD52FF /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "parse-library-1/Parse.framework"; sourceTree = "<group>"; };
+		848FE8A61D9B9B3E00CD52FF /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtilsV4.framework; path = "parse-library-1/ParseFacebookUtilsV4.framework"; sourceTree = "<group>"; };
+		848FE8A71D9B9B3E00CD52FF /* ParseTwitterUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseTwitterUtils.framework; path = "parse-library-1/ParseTwitterUtils.framework"; sourceTree = "<group>"; };
+		848FE8A81D9B9B3E00CD52FF /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseUI.framework; path = "parse-library-1/ParseUI.framework"; sourceTree = "<group>"; };
+		848FE8AF1D9B9B7100CD52FF /* parse-library-1 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "parse-library-1"; sourceTree = "<group>"; };
+		848FE8B51D9BAA1600CD52FF /* VetHeaderParse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VetHeaderParse.h; sourceTree = "<group>"; };
+		848FE8B61D9BADC300CD52FF /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		848FE8B71D9BADC300CD52FF /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		848FE8B81D9BADC300CD52FF /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		84A5B6E81DA2371200C8E2FA /* VetSignViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VetSignViewController.swift; sourceTree = "<group>"; };
+		84E5A7BE1D9BB2730032EEE8 /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ParseFacebookUtils.framework; path = "parse-library-1/ParseFacebookUtils.framework"; sourceTree = "<group>"; };
+		84E5A7C01D9BD8AF0032EEE8 /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		84FFB1B91DA65D3A00C2C1A0 /* MenuPicCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuPicCell.swift; sourceTree = "<group>"; };
+		84FFB1BC1DA65F7100C2C1A0 /* MenuItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemTableViewCell.swift; sourceTree = "<group>"; };
+		84FFB1EE1DA6E33400C2C1A0 /* GroomerOrOwner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroomerOrOwner.swift; sourceTree = "<group>"; };
+		B348DCE39ED574232F441A66 /* Pods_VetsNow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VetsNow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		848FE8621D9B90FE00CD52FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84626F291D9EE68500048401 /* Foundation.framework in Frameworks */,
+				848FE8BA1D9BADC300CD52FF /* FBSDKLoginKit.framework in Frameworks */,
+				848FE8991D9B99FC00CD52FF /* CFNetwork.framework in Frameworks */,
+				848FE89A1D9B99FC00CD52FF /* CoreGraphics.framework in Frameworks */,
+				848FE8AC1D9B9B3E00CD52FF /* ParseFacebookUtilsV4.framework in Frameworks */,
+				848FE89B1D9B99FC00CD52FF /* CoreLocation.framework in Frameworks */,
+				84E5A7BF1D9BB2730032EEE8 /* ParseFacebookUtils.framework in Frameworks */,
+				848FE8AD1D9B9B3E00CD52FF /* ParseTwitterUtils.framework in Frameworks */,
+				848FE89C1D9B99FC00CD52FF /* libsqlite3.tbd in Frameworks */,
+				848FE8AE1D9B9B3E00CD52FF /* ParseUI.framework in Frameworks */,
+				848FE89D1D9B99FC00CD52FF /* libz.tbd in Frameworks */,
+				848FE89E1D9B99FC00CD52FF /* QuartzCore.framework in Frameworks */,
+				848FE89F1D9B99FC00CD52FF /* Security.framework in Frameworks */,
+				848FE8A01D9B99FC00CD52FF /* StoreKit.framework in Frameworks */,
+				848FE8A91D9B9B3E00CD52FF /* Bolts.framework in Frameworks */,
+				848FE8A11D9B99FC00CD52FF /* SystemConfiguration.framework in Frameworks */,
+				848FE8BB1D9BADC300CD52FF /* FBSDKShareKit.framework in Frameworks */,
+				848FE8B91D9BADC300CD52FF /* FBSDKCoreKit.framework in Frameworks */,
+				848FE8AA1D9B9B3E00CD52FF /* Parse.framework in Frameworks */,
+				848FE88F1D9B998A00CD52FF /* AudioToolbox.framework in Frameworks */,
+				334D2310887F64DB77971BB2 /* Pods_VetsNow.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6BD869735D368DAE13F75E84 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				210FC65BFF78084200B66158 /* Pods-VetsNow.debug.xcconfig */,
+				0EB2529289C54E0AE4C161B8 /* Pods-VetsNow.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		848CC1E51DA302E500FDC6E6 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				848FE86C1D9B90FE00CD52FF /* Main.storyboard */,
+				848CC1E31DA302BC00FDC6E6 /* PetOwnerHome.storyboard */,
+				848CC1E01DA3025600FDC6E6 /* VendorLogIn.storyboard */,
+				848FE8711D9B90FE00CD52FF /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		848FE85C1D9B90FD00CD52FF = {
+			isa = PBXGroup;
+			children = (
+				848FE8AF1D9B9B7100CD52FF /* parse-library-1 */,
+				848FE8671D9B90FE00CD52FF /* VetsNow */,
+				848FE88D1D9B998A00CD52FF /* Frameworks */,
+				848FE8661D9B90FE00CD52FF /* Products */,
+				6BD869735D368DAE13F75E84 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		848FE8661D9B90FE00CD52FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				848FE8651D9B90FE00CD52FF /* VetsNow.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		848FE8671D9B90FE00CD52FF /* VetsNow */ = {
+			isa = PBXGroup;
+			children = (
+				84FFB1EE1DA6E33400C2C1A0 /* GroomerOrOwner.swift */,
+				84FFB1B81DA65CDC00C2C1A0 /* User */,
+				84FFB1BB1DA65D5200C2C1A0 /* Groomer */,
+				848CC1E51DA302E500FDC6E6 /* Storyboards */,
+				84FFB1ED1DA6D66400C2C1A0 /* AD/pList/Assets/Header */,
+				84FFB1EC1DA6D63600C2C1A0 /* SlideMenuHomePage */,
+			);
+			path = VetsNow;
+			sourceTree = "<group>";
+		};
+		848FE88D1D9B998A00CD52FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84626F281D9EE68500048401 /* Foundation.framework */,
+				84E5A7BE1D9BB2730032EEE8 /* ParseFacebookUtils.framework */,
+				848FE8B61D9BADC300CD52FF /* FBSDKCoreKit.framework */,
+				848FE8B71D9BADC300CD52FF /* FBSDKLoginKit.framework */,
+				848FE8B81D9BADC300CD52FF /* FBSDKShareKit.framework */,
+				848FE8A31D9B9B3E00CD52FF /* Bolts.framework */,
+				848FE8A41D9B9B3E00CD52FF /* Parse.framework */,
+				848FE8A61D9B9B3E00CD52FF /* ParseFacebookUtilsV4.framework */,
+				848FE8A71D9B9B3E00CD52FF /* ParseTwitterUtils.framework */,
+				848FE8A81D9B9B3E00CD52FF /* ParseUI.framework */,
+				848FE8901D9B99FC00CD52FF /* CFNetwork.framework */,
+				848FE8911D9B99FC00CD52FF /* CoreGraphics.framework */,
+				848FE8921D9B99FC00CD52FF /* CoreLocation.framework */,
+				848FE8931D9B99FC00CD52FF /* libsqlite3.tbd */,
+				848FE8941D9B99FC00CD52FF /* libz.tbd */,
+				848FE8951D9B99FC00CD52FF /* QuartzCore.framework */,
+				848FE8961D9B99FC00CD52FF /* Security.framework */,
+				848FE8971D9B99FC00CD52FF /* StoreKit.framework */,
+				848FE8981D9B99FC00CD52FF /* SystemConfiguration.framework */,
+				848FE88E1D9B998A00CD52FF /* AudioToolbox.framework */,
+				B348DCE39ED574232F441A66 /* Pods_VetsNow.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84FFB1B81DA65CDC00C2C1A0 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				848FE86A1D9B90FE00CD52FF /* ViewController.swift */,
+				84E5A7C01D9BD8AF0032EEE8 /* Home.swift */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		84FFB1BB1DA65D5200C2C1A0 /* Groomer */ = {
+			isa = PBXGroup;
+			children = (
+				848CC1E61DA3040F00FDC6E6 /* VendorLogInViewController.swift */,
+				84A5B6E81DA2371200C8E2FA /* VetSignViewController.swift */,
+			);
+			name = Groomer;
+			sourceTree = "<group>";
+		};
+		84FFB1EC1DA6D63600C2C1A0 /* SlideMenuHomePage */ = {
+			isa = PBXGroup;
+			children = (
+				848CC1E81DA31D8900FDC6E6 /* ServiceTableViewMenu.swift */,
+				84FFB1B91DA65D3A00C2C1A0 /* MenuPicCell.swift */,
+				84FFB1BC1DA65F7100C2C1A0 /* MenuItemTableViewCell.swift */,
+			);
+			name = SlideMenuHomePage;
+			sourceTree = "<group>";
+		};
+		84FFB1ED1DA6D66400C2C1A0 /* AD/pList/Assets/Header */ = {
+			isa = PBXGroup;
+			children = (
+				848FE8B51D9BAA1600CD52FF /* VetHeaderParse.h */,
+				848FE8681D9B90FE00CD52FF /* AppDelegate.swift */,
+				848FE86F1D9B90FE00CD52FF /* Assets.xcassets */,
+				848FE8741D9B90FE00CD52FF /* Info.plist */,
+			);
+			name = AD/pList/Assets/Header;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		848FE8641D9B90FE00CD52FF /* VetsNow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 848FE8771D9B90FE00CD52FF /* Build configuration list for PBXNativeTarget "VetsNow" */;
+			buildPhases = (
+				FA736B0AADE7CB52F8ACBC18 /* [CP] Check Pods Manifest.lock */,
+				848FE8611D9B90FE00CD52FF /* Sources */,
+				848FE8621D9B90FE00CD52FF /* Frameworks */,
+				848FE8631D9B90FE00CD52FF /* Resources */,
+				02042677CA62BE222ABE1B18 /* [CP] Embed Pods Frameworks */,
+				8E9DF73FE65FE2BE52D94A5F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VetsNow;
+			productName = VetsNow;
+			productReference = 848FE8651D9B90FE00CD52FF /* VetsNow.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		848FE85D1D9B90FD00CD52FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Miles Fishman";
+				TargetAttributes = {
+					848FE8641D9B90FE00CD52FF = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = WMVNZYDS86;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 848FE8601D9B90FD00CD52FF /* Build configuration list for PBXProject "VetsNow" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 848FE85C1D9B90FD00CD52FF;
+			productRefGroup = 848FE8661D9B90FE00CD52FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				848FE8641D9B90FE00CD52FF /* VetsNow */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		848FE8631D9B90FE00CD52FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848FE8731D9B90FE00CD52FF /* LaunchScreen.storyboard in Resources */,
+				848CC1E21DA3025600FDC6E6 /* VendorLogIn.storyboard in Resources */,
+				848FE8701D9B90FE00CD52FF /* Assets.xcassets in Resources */,
+				848CC1E41DA302BC00FDC6E6 /* PetOwnerHome.storyboard in Resources */,
+				848FE8B01D9B9B7100CD52FF /* parse-library-1 in Resources */,
+				848FE86E1D9B90FE00CD52FF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02042677CA62BE222ABE1B18 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VetsNow/Pods-VetsNow-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E9DF73FE65FE2BE52D94A5F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VetsNow/Pods-VetsNow-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA736B0AADE7CB52F8ACBC18 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		848FE8611D9B90FE00CD52FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				848CC1E71DA3040F00FDC6E6 /* VendorLogInViewController.swift in Sources */,
+				848FE86B1D9B90FE00CD52FF /* ViewController.swift in Sources */,
+				84A5B6E91DA2371200C8E2FA /* VetSignViewController.swift in Sources */,
+				84E5A7C11D9BD8AF0032EEE8 /* Home.swift in Sources */,
+				848CC1E91DA31D8900FDC6E6 /* ServiceTableViewMenu.swift in Sources */,
+				84FFB1BD1DA65F7100C2C1A0 /* MenuItemTableViewCell.swift in Sources */,
+				848FE8691D9B90FE00CD52FF /* AppDelegate.swift in Sources */,
+				84FFB1BA1DA65D3A00C2C1A0 /* MenuPicCell.swift in Sources */,
+				84FFB1EF1DA6E33400C2C1A0 /* GroomerOrOwner.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		848CC1E01DA3025600FDC6E6 /* VendorLogIn.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				848CC1E11DA3025600FDC6E6 /* Base */,
+			);
+			name = VendorLogIn.storyboard;
+			sourceTree = "<group>";
+		};
+		848FE86C1D9B90FE00CD52FF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				848FE86D1D9B90FE00CD52FF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		848FE8711D9B90FE00CD52FF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				848FE8721D9B90FE00CD52FF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		848FE8751D9B90FE00CD52FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		848FE8761D9B90FE00CD52FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		848FE8781D9B90FE00CD52FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 210FC65BFF78084200B66158 /* Pods-VetsNow.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = WMVNZYDS86;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/parse-library-1",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = VetsNow/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.milesFishman.VetsNow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		848FE8791D9B90FE00CD52FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EB2529289C54E0AE4C161B8 /* Pods-VetsNow.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = WMVNZYDS86;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/parse-library-1",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = VetsNow/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.milesFishman.VetsNow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		848FE8601D9B90FD00CD52FF /* Build configuration list for PBXProject "VetsNow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				848FE8751D9B90FE00CD52FF /* Debug */,
+				848FE8761D9B90FE00CD52FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		848FE8771D9B90FE00CD52FF /* Build configuration list for PBXNativeTarget "VetsNow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				848FE8781D9B90FE00CD52FF /* Debug */,
+				848FE8791D9B90FE00CD52FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 848FE85D1D9B90FD00CD52FF /* Project object */;
+}
