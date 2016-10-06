@@ -15,7 +15,29 @@ import MapKit
 import CoreLocation
 
 
-class Home : UIViewController, CLLocationManagerDelegate , MKMapViewDelegate   {
+class Home : UIViewController, CLLocationManagerDelegate , MKMapViewDelegate, UITableViewDataSource, UITableViewDelegate   {
+    
+    let services = ["Clean Eyes", "Clean Ears", "Trim Paw Pads", "Clip Nails", "Final Brush and fluff"]
+    
+    
+    func numberOfSections(in: UITableView) -> Int {
+        return 1
+        
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection: Int) -> Int {
+        let numberOfRows = services.count
+        return numberOfRows
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Services Cell", for: indexPath)
+        let service = services[indexPath.row]
+        cell.textLabel?.text = service
+    
+        
+        return cell
+    }
     
     @IBOutlet weak var logOutButton: UIButton!
     
@@ -23,7 +45,6 @@ class Home : UIViewController, CLLocationManagerDelegate , MKMapViewDelegate   {
         
         PFUser.logOut()
         self.dismiss(animated: true, completion: nil)
-        
         
     }
     
@@ -90,6 +111,8 @@ class Home : UIViewController, CLLocationManagerDelegate , MKMapViewDelegate   {
         locationManager.distanceFilter = kCLDistanceFilterNone
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
+        
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
