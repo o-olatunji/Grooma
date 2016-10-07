@@ -17,37 +17,36 @@ import CoreLocation
 
 class Home : UIViewController, CLLocationManagerDelegate , MKMapViewDelegate, UITableViewDataSource, UITableViewDelegate   {
     
-    let services = ["Clean Eyes", "Clean Ears", "Trim Paw Pads", "Clip Nails", "Final Brush and fluff"]
+    @IBOutlet weak var servicesTable: UITableView!
     
+    //  let cart :[String] = []
+    
+    let services = ["Clean Eyes : $20", "Clean Ears : $20", "Trim Paw Pads : $20", "Clip Nails : $20", "Final Brush and fluff : $60"]
     
     func numberOfSections(in: UITableView) -> Int {
         return 1
-        
     }
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection: Int) -> Int {
-        let numberOfRows = services.count
-        return numberOfRows
+        return services.count
     }
-    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Services Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ServicesCell", for: indexPath)
         let service = services[indexPath.row]
+        
+        cell.textLabel?.textColor = UIColor.white
         cell.textLabel?.text = service
-    
+        cell.textLabel?.textAlignment = .center
         
         return cell
     }
     
     @IBOutlet weak var logOutButton: UIButton!
-    
     @IBAction func logOutAction(_ sender: AnyObject) {
         
         PFUser.logOut()
-        self.dismiss(animated: true, completion: nil)
         
+        self.dismiss(animated: true, completion: nil)
     }
-    
     @IBOutlet weak var FBProfilePic: UIImageView!
     
     func getUserInfoFromFB(){
@@ -93,15 +92,19 @@ class Home : UIViewController, CLLocationManagerDelegate , MKMapViewDelegate, UI
     }
     
     // ----- MAP -----//
-    
     @IBOutlet weak var mapView: MKMapView!
     
-    var selectedPin: MKPlacemark? = nil
-    var resultSearchController: UISearchController? = nil
     var locationManager : CLLocationManager!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        servicesTable.delegate = self
+        servicesTable.dataSource = self
+        servicesTable.layer.cornerRadius = 15
+        servicesTable.separatorStyle = .singleLine
+        servicesTable.separatorColor = UIColor.white
+        servicesTable.separatorEffect = UIVisualEffect()
         
         mapView.delegate = self
         
@@ -112,19 +115,21 @@ class Home : UIViewController, CLLocationManagerDelegate , MKMapViewDelegate, UI
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
         
-        
     }
-    
     override func viewDidAppear(_ animated: Bool) {
         
         getUserInfoFromFB()
         
         logOutButton.layer.cornerRadius = 15
-        logOutButton.layer.borderWidth = 2
         logOutButton.layer.masksToBounds = true
         
         FBProfilePic.layer.cornerRadius = 25
-        FBProfilePic.layer.borderWidth = 2
+        FBProfilePic.layer.borderWidth = 3
+        FBProfilePic.layer.shadowOpacity = 0.2
+        FBProfilePic.layer.shadowPath = UIBezierPath(roundedRect: self.view.bounds , cornerRadius: 12).cgPath
+        FBProfilePic.layer.borderColor = UIColor(netHex: 0x89B1B9).cgColor
+        FBProfilePic.layer.shadowColor = UIColor.black.cgColor
+        FBProfilePic.layer.shadowRadius = 3.0
         FBProfilePic.layer.masksToBounds = true
         
         //Create 2D coordiantes & set region:
@@ -142,11 +147,9 @@ class Home : UIViewController, CLLocationManagerDelegate , MKMapViewDelegate, UI
         annotation.coordinate = center
         mapView.addAnnotation(annotation)
     }
-    
     //Location Delegate Methods
     
     private func locationManager(manager: CLLocationManager, didUpdateLocation locations: [CLLocation]) {
-        
         locationManager.stopUpdatingLocation()
     }
     
@@ -156,5 +159,18 @@ class Home : UIViewController, CLLocationManagerDelegate , MKMapViewDelegate, UI
     
     override func viewDidDisappear(_ animated: Bool) {
     }
+}
+
+extension UIColor {
+    convenience init(red: Int, green: Int, blue: Int) {
+        assert(red >= 0 && red <= 255, "Invalid red component")
+        assert(green >= 0 && green <= 255, "Invalid green component")
+        assert(blue >= 0 && blue <= 255, "Invalid blue component")
+        
+        self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: 1.0)
+    }
     
+    convenience init(netHex:Int) {
+        self.init(red:(netHex >> 16) & 0xff, green:(netHex >> 8) & 0xff, blue:netHex & 0xff)
+    }
 }
