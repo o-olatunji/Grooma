@@ -1,5 +1,5 @@
 //
-//  MenuPicCell.swift
+//  ServicesTableViewCell.swift
 //  VetsNow
 //
 //  Created by Admin on 10/6/16.
@@ -8,10 +8,8 @@
 
 import UIKit
 
-class MenuPicCell: UITableViewCell {
+class ServicesTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var userPhoto: UIImageView!
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
