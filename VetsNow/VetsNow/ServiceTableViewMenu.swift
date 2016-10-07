@@ -17,19 +17,22 @@ class ServiceTableViewMenu: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var menuTable: UITableView!
     @IBOutlet weak var profilePicUser: UIImageView!
     
-    var services:[String] = ["Your Pet", "Favorites", "Log Out"]
+    var services:[String] = ["Your Pet", "Favorites", "About-Us", "Pet Stores"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         menuTable.delegate = self
         menuTable.dataSource = self
         
         SideMenuManager.menuFadeStatusBar = false
         SideMenuManager.menuPresentMode = .menuDissolveIn
-        SideMenuManager.menuAnimationPresentDuration = 0.7
+        SideMenuManager.menuAnimationPresentDuration = 0.5
         
         profilePicUser.image = profileImage
+        profilePicUser.layer.masksToBounds = true
+        profilePicUser.layer.cornerRadius = 90
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -44,9 +47,9 @@ class ServiceTableViewMenu: UIViewController, UITableViewDelegate, UITableViewDa
         
         if let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? MenuItemTableViewCell {
             
-            cell.menuItem.textColor = UIColor.black
+          
+            cell.menuItem.textColor = UIColor.white
             cell.menuItem.text = services[indexPath.row]
-            
         }
         return UITableViewCell()
     }

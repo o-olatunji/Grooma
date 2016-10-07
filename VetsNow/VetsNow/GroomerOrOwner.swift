@@ -25,10 +25,11 @@ class GroomerOrOwner : UIViewController {
         self.navigationController?.navigationBar.backgroundColor = UIColor.clear
         
         petOwner.layer.cornerRadius = 9
-        petOwner.layer.borderWidth = 1
+        petOwner.layer.borderWidth = 0
+        petOwner.layer.borderColor = UIColor.black.cgColor
         
         groomer.layer.cornerRadius = 9
-        petOwner.layer.borderWidth = 1
+        petOwner.layer.borderWidth = 0
         
         
         
