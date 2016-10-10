@@ -11,6 +11,9 @@ import Parse
 import Bolts
 import ParseFacebookUtilsV4
 import FBSDKCoreKit
+import Fabric
+import Stripe
+
 
 
 @UIApplicationMain
@@ -33,6 +36,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         // Override point for customization after application launch.
+        
+        Fabric.with([STPAPIClient.self])
+        
+        // TODO: Replace with your own test publishable key
+        // TODO: DEBUG ONLY! Remove / conditionalize before launch
+        Stripe.setDefaultPublishableKey("pk_test_4rgpX1XWaLERbrVT3BuZbqHJ")
+
         
         return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
     }
