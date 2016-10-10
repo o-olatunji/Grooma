@@ -17,7 +17,7 @@ class ServiceTableViewMenu: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var menuTable: UITableView!
     @IBOutlet weak var profilePicUser: UIImageView!
     
-    var services:[String] = ["Your Pet", "Favorites", "Log Out"]
+    var myProfile:[String] = ["Your Pet", "Favorites", "About-Us", "Pet Stores"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,11 +25,20 @@ class ServiceTableViewMenu: UIViewController, UITableViewDelegate, UITableViewDa
         menuTable.delegate = self
         menuTable.dataSource = self
         
+        SideMenuManager.menuWidth = 320
         SideMenuManager.menuFadeStatusBar = false
+        SideMenuManager.menuShadowColor = UIColor.black
         SideMenuManager.menuPresentMode = .menuDissolveIn
-        SideMenuManager.menuAnimationPresentDuration = 0.7
+        SideMenuManager.menuAnimationPresentDuration = 0.5
         
         profilePicUser.image = profileImage
+        profilePicUser.layer.masksToBounds = true
+        profilePicUser.layer.cornerRadius = 90
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+       
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -37,16 +46,16 @@ class ServiceTableViewMenu: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return services.count
+        return myProfile.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? MenuItemTableViewCell {
             
-            cell.menuItem.textColor = UIColor.black
-            cell.menuItem.text = services[indexPath.row]
-            
+            cell.menuItem.textColor = UIColor.white
+            cell.menuItem.text = myProfile[indexPath.row]
+            cell.menuItem.textAlignment = .center
         }
         return UITableViewCell()
     }
