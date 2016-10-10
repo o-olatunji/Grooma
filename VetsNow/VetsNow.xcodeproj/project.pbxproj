@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		334D2310887F64DB77971BB2 /* Pods_VetsNow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B348DCE39ED574232F441A66 /* Pods_VetsNow.framework */; };
+		841E17431DA8FFC000B62B91 /* CartMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841E17421DA8FFC000B62B91 /* CartMenu.swift */; };
 		843256941DA7662D00505912 /* ServicesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843256931DA7662C00505912 /* ServicesTableViewCell.swift */; };
 		84626F291D9EE68500048401 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84626F281D9EE68500048401 /* Foundation.framework */; };
 		848CC1E21DA3025600FDC6E6 /* VendorLogIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848CC1E01DA3025600FDC6E6 /* VendorLogIn.storyboard */; };
@@ -49,6 +50,7 @@
 /* Begin PBXFileReference section */
 		0EB2529289C54E0AE4C161B8 /* Pods-VetsNow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VetsNow.release.xcconfig"; path = "Pods/Target Support Files/Pods-VetsNow/Pods-VetsNow.release.xcconfig"; sourceTree = "<group>"; };
 		210FC65BFF78084200B66158 /* Pods-VetsNow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VetsNow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VetsNow/Pods-VetsNow.debug.xcconfig"; sourceTree = "<group>"; };
+		841E17421DA8FFC000B62B91 /* CartMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartMenu.swift; sourceTree = "<group>"; };
 		843256931DA7662C00505912 /* ServicesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesTableViewCell.swift; sourceTree = "<group>"; };
 		84626F281D9EE68500048401 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		848CC1E11DA3025600FDC6E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/VendorLogIn.storyboard; sourceTree = "<group>"; };
@@ -165,12 +167,11 @@
 		848FE8671D9B90FE00CD52FF /* VetsNow */ = {
 			isa = PBXGroup;
 			children = (
-				84FFB1EE1DA6E33400C2C1A0 /* GroomerOrOwner.swift */,
 				84FFB1B81DA65CDC00C2C1A0 /* User */,
 				84FFB1BB1DA65D5200C2C1A0 /* Groomer */,
 				848CC1E51DA302E500FDC6E6 /* Storyboards */,
 				84FFB1ED1DA6D66400C2C1A0 /* AD/pList/Assets/Header */,
-				84FFB1EC1DA6D63600C2C1A0 /* SlideMenuHomePage */,
+				84FFB1EC1DA6D63600C2C1A0 /* SlideMenus */,
 				843256931DA7662C00505912 /* ServicesTableViewCell.swift */,
 			);
 			path = VetsNow;
@@ -207,6 +208,7 @@
 		84FFB1B81DA65CDC00C2C1A0 /* User */ = {
 			isa = PBXGroup;
 			children = (
+				84FFB1EE1DA6E33400C2C1A0 /* GroomerOrOwner.swift */,
 				848FE86A1D9B90FE00CD52FF /* ViewController.swift */,
 				84E5A7C01D9BD8AF0032EEE8 /* Home.swift */,
 			);
@@ -222,14 +224,15 @@
 			name = Groomer;
 			sourceTree = "<group>";
 		};
-		84FFB1EC1DA6D63600C2C1A0 /* SlideMenuHomePage */ = {
+		84FFB1EC1DA6D63600C2C1A0 /* SlideMenus */ = {
 			isa = PBXGroup;
 			children = (
 				848CC1E81DA31D8900FDC6E6 /* ServiceTableViewMenu.swift */,
-				84FFB1B91DA65D3A00C2C1A0 /* MenuPicCell.swift */,
 				84FFB1BC1DA65F7100C2C1A0 /* MenuItemTableViewCell.swift */,
+				841E17421DA8FFC000B62B91 /* CartMenu.swift */,
+				84FFB1B91DA65D3A00C2C1A0 /* MenuPicCell.swift */,
 			);
-			name = SlideMenuHomePage;
+			name = SlideMenus;
 			sourceTree = "<group>";
 		};
 		84FFB1ED1DA6D66400C2C1A0 /* AD/pList/Assets/Header */ = {
@@ -381,6 +384,7 @@
 				848FE8691D9B90FE00CD52FF /* AppDelegate.swift in Sources */,
 				84FFB1BA1DA65D3A00C2C1A0 /* MenuPicCell.swift in Sources */,
 				84FFB1EF1DA6E33400C2C1A0 /* GroomerOrOwner.swift in Sources */,
+				841E17431DA8FFC000B62B91 /* CartMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
