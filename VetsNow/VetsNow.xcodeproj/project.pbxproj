@@ -28,7 +28,6 @@
 		848FE89D1D9B99FC00CD52FF /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 848FE8941D9B99FC00CD52FF /* libz.tbd */; };
 		848FE89E1D9B99FC00CD52FF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848FE8951D9B99FC00CD52FF /* QuartzCore.framework */; };
 		848FE89F1D9B99FC00CD52FF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848FE8961D9B99FC00CD52FF /* Security.framework */; };
-		848FE8A01D9B99FC00CD52FF /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848FE8971D9B99FC00CD52FF /* StoreKit.framework */; };
 		848FE8A11D9B99FC00CD52FF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848FE8981D9B99FC00CD52FF /* SystemConfiguration.framework */; };
 		848FE8A91D9B9B3E00CD52FF /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848FE8A31D9B9B3E00CD52FF /* Bolts.framework */; };
 		848FE8AA1D9B9B3E00CD52FF /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848FE8A41D9B9B3E00CD52FF /* Parse.framework */; };
@@ -49,6 +48,7 @@
 		BF6AEECB1DAC25710036385D /* Stripe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6AEEC81DAC25710036385D /* Stripe.framework */; };
 		BF6AEECC1DAC25710036385D /* Stripe.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BF6AEEC91DAC25710036385D /* Stripe.bundle */; };
 		BF6AEECE1DAC26F10036385D /* StripePaymentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6AEECD1DAC26F10036385D /* StripePaymentVC.swift */; };
+		BF6AEED11DAC49EA0036385D /* PaymentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6AEED01DAC49EA0036385D /* PaymentVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,7 +76,6 @@
 		848FE8941D9B99FC00CD52FF /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		848FE8951D9B99FC00CD52FF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		848FE8961D9B99FC00CD52FF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		848FE8971D9B99FC00CD52FF /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		848FE8981D9B99FC00CD52FF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		848FE8A31D9B9B3E00CD52FF /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "parse-library-1/Bolts.framework"; sourceTree = "<group>"; };
 		848FE8A41D9B9B3E00CD52FF /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "parse-library-1/Parse.framework"; sourceTree = "<group>"; };
@@ -99,6 +98,8 @@
 		BF6AEEC81DAC25710036385D /* Stripe.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Stripe.framework; sourceTree = "<group>"; };
 		BF6AEEC91DAC25710036385D /* Stripe.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Stripe.bundle; path = Stripe.framework/Stripe.bundle; sourceTree = "<group>"; };
 		BF6AEECD1DAC26F10036385D /* StripePaymentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StripePaymentVC.swift; sourceTree = "<group>"; };
+		BF6AEECF1DAC36990036385D /* VetsNow.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VetsNow.entitlements; sourceTree = "<group>"; };
+		BF6AEED01DAC49EA0036385D /* PaymentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,7 +121,6 @@
 				848FE89D1D9B99FC00CD52FF /* libz.tbd in Frameworks */,
 				848FE89E1D9B99FC00CD52FF /* QuartzCore.framework in Frameworks */,
 				848FE89F1D9B99FC00CD52FF /* Security.framework in Frameworks */,
-				848FE8A01D9B99FC00CD52FF /* StoreKit.framework in Frameworks */,
 				848FE8A91D9B9B3E00CD52FF /* Bolts.framework in Frameworks */,
 				848FE8A11D9B99FC00CD52FF /* SystemConfiguration.framework in Frameworks */,
 				848FE8BB1D9BADC300CD52FF /* FBSDKShareKit.framework in Frameworks */,
@@ -177,6 +177,7 @@
 		848FE8671D9B90FE00CD52FF /* VetsNow */ = {
 			isa = PBXGroup;
 			children = (
+				BF6AEECF1DAC36990036385D /* VetsNow.entitlements */,
 				84FFB1B81DA65CDC00C2C1A0 /* User */,
 				84FFB1BB1DA65D5200C2C1A0 /* Groomer */,
 				848CC1E51DA302E500FDC6E6 /* Storyboards */,
@@ -210,7 +211,6 @@
 				848FE8941D9B99FC00CD52FF /* libz.tbd */,
 				848FE8951D9B99FC00CD52FF /* QuartzCore.framework */,
 				848FE8961D9B99FC00CD52FF /* Security.framework */,
-				848FE8971D9B99FC00CD52FF /* StoreKit.framework */,
 				848FE8981D9B99FC00CD52FF /* SystemConfiguration.framework */,
 				848FE88E1D9B998A00CD52FF /* AudioToolbox.framework */,
 				B348DCE39ED574232F441A66 /* Pods_VetsNow.framework */,
@@ -225,6 +225,7 @@
 				848FE86A1D9B90FE00CD52FF /* ViewController.swift */,
 				84E5A7C01D9BD8AF0032EEE8 /* Home.swift */,
 				BF6AEECD1DAC26F10036385D /* StripePaymentVC.swift */,
+				BF6AEED01DAC49EA0036385D /* PaymentVC.swift */,
 			);
 			name = User;
 			sourceTree = "<group>";
@@ -296,9 +297,17 @@
 				TargetAttributes = {
 					848FE8641D9B90FE00CD52FF = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = WMVNZYDS86;
+						DevelopmentTeam = XL382KPW8D;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplePay = {
+								enabled = 1;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -406,6 +415,7 @@
 				848CC1E71DA3040F00FDC6E6 /* VendorLogInViewController.swift in Sources */,
 				848FE86B1D9B90FE00CD52FF /* ViewController.swift in Sources */,
 				84A5B6E91DA2371200C8E2FA /* VetSignViewController.swift in Sources */,
+				BF6AEED11DAC49EA0036385D /* PaymentVC.swift in Sources */,
 				84E5A7C11D9BD8AF0032EEE8 /* Home.swift in Sources */,
 				848CC1E91DA31D8900FDC6E6 /* ServiceTableViewMenu.swift in Sources */,
 				843256941DA7662D00505912 /* ServicesTableViewCell.swift in Sources */,
@@ -549,8 +559,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = VetsNow/VetsNow.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = WMVNZYDS86;
+				DEVELOPMENT_TEAM = XL382KPW8D;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/parse-library-1",
@@ -559,7 +570,7 @@
 				INFOPLIST_FILE = VetsNow/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.milesFishman.VetsNow;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GroomaNow.Grooma;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -573,8 +584,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = VetsNow/VetsNow.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = WMVNZYDS86;
+				DEVELOPMENT_TEAM = XL382KPW8D;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/parse-library-1",
@@ -583,7 +595,7 @@
 				INFOPLIST_FILE = VetsNow/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.milesFishman.VetsNow;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GroomaNow.Grooma;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";

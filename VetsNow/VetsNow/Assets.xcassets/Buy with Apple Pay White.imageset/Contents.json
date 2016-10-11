@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "applepaylogo.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "ApplePayBTN_51pt__whiteLine_textLogo_@2x.png",
       "scale" : "2x"
     },
     {
