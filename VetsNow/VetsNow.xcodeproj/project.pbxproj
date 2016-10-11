@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32B9B5601DAD54C200A0A8E6 /* VendorServiceTableViewSlideMenu copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B9B55F1DAD54C200A0A8E6 /* VendorServiceTableViewSlideMenu copy.swift */; };
+		32B9B5621DAD54DC00A0A8E6 /* VendorServiceItemTableViewCell copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B9B5611DAD54DC00A0A8E6 /* VendorServiceItemTableViewCell copy.swift */; };
 		334D2310887F64DB77971BB2 /* Pods_VetsNow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B348DCE39ED574232F441A66 /* Pods_VetsNow.framework */; };
 		841E17431DA8FFC000B62B91 /* CartMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841E17421DA8FFC000B62B91 /* CartMenu.swift */; };
 		843256941DA7662D00505912 /* ServicesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843256931DA7662C00505912 /* ServicesTableViewCell.swift */; };
@@ -54,6 +56,8 @@
 /* Begin PBXFileReference section */
 		0EB2529289C54E0AE4C161B8 /* Pods-VetsNow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VetsNow.release.xcconfig"; path = "Pods/Target Support Files/Pods-VetsNow/Pods-VetsNow.release.xcconfig"; sourceTree = "<group>"; };
 		210FC65BFF78084200B66158 /* Pods-VetsNow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VetsNow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VetsNow/Pods-VetsNow.debug.xcconfig"; sourceTree = "<group>"; };
+		32B9B55F1DAD54C200A0A8E6 /* VendorServiceTableViewSlideMenu copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VendorServiceTableViewSlideMenu copy.swift"; sourceTree = "<group>"; };
+		32B9B5611DAD54DC00A0A8E6 /* VendorServiceItemTableViewCell copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VendorServiceItemTableViewCell copy.swift"; sourceTree = "<group>"; };
 		841E17421DA8FFC000B62B91 /* CartMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartMenu.swift; sourceTree = "<group>"; };
 		843256931DA7662C00505912 /* ServicesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesTableViewCell.swift; sourceTree = "<group>"; };
 		84626F281D9EE68500048401 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -242,7 +246,9 @@
 		84FFB1EC1DA6D63600C2C1A0 /* SlideMenus */ = {
 			isa = PBXGroup;
 			children = (
+				32B9B55F1DAD54C200A0A8E6 /* VendorServiceTableViewSlideMenu copy.swift */,
 				848CC1E81DA31D8900FDC6E6 /* ServiceTableViewMenu.swift */,
+				32B9B5611DAD54DC00A0A8E6 /* VendorServiceItemTableViewCell copy.swift */,
 				84FFB1BC1DA65F7100C2C1A0 /* MenuItemTableViewCell.swift */,
 				841E17421DA8FFC000B62B91 /* CartMenu.swift */,
 				84FFB1B91DA65D3A00C2C1A0 /* MenuPicCell.swift */,
@@ -297,7 +303,6 @@
 				TargetAttributes = {
 					848FE8641D9B90FE00CD52FF = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = XL382KPW8D;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -418,6 +423,7 @@
 				BF6AEED11DAC49EA0036385D /* PaymentVC.swift in Sources */,
 				84E5A7C11D9BD8AF0032EEE8 /* Home.swift in Sources */,
 				848CC1E91DA31D8900FDC6E6 /* ServiceTableViewMenu.swift in Sources */,
+				32B9B5601DAD54C200A0A8E6 /* VendorServiceTableViewSlideMenu copy.swift in Sources */,
 				843256941DA7662D00505912 /* ServicesTableViewCell.swift in Sources */,
 				84FFB1BD1DA65F7100C2C1A0 /* MenuItemTableViewCell.swift in Sources */,
 				848FE8691D9B90FE00CD52FF /* AppDelegate.swift in Sources */,
@@ -425,6 +431,7 @@
 				84FFB1EF1DA6E33400C2C1A0 /* GroomerOrOwner.swift in Sources */,
 				BF6AEECE1DAC26F10036385D /* StripePaymentVC.swift in Sources */,
 				841E17431DA8FFC000B62B91 /* CartMenu.swift in Sources */,
+				32B9B5621DAD54DC00A0A8E6 /* VendorServiceItemTableViewCell copy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -561,7 +568,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = VetsNow/VetsNow.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = XL382KPW8D;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/parse-library-1",
@@ -586,7 +593,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = VetsNow/VetsNow.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = XL382KPW8D;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/parse-library-1",
