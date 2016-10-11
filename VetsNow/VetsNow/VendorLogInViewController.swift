@@ -16,7 +16,7 @@ class VendorLogInViewController: UIViewController {
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     
-    @IBAction func loginButtonClicked(_ sender: AnyObject) {
+        @IBAction func loginButtonClicked(_ sender: AnyObject) {
         
         view.endEditing(true)
         
@@ -66,38 +66,3 @@ class VendorLogInViewController: UIViewController {
         view.endEditing(true)
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
