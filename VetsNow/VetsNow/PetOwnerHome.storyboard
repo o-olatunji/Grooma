@@ -203,7 +203,7 @@
                                                     </subviews>
                                                 </tableViewCellContentView>
                                                 <connections>
-                                                    <segue destination="4P2-2w-BfT" kind="show" id="KqL-JZ-ils"/>
+                                                    <segue destination="wLU-dE-blP" kind="show" id="L5P-ck-QNI"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
@@ -222,6 +222,14 @@
                         </subviews>
                         <color key="backgroundColor" red="0.46666666670000001" green="0.63529411759999999" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem systemItem="cancel" id="cNV-RO-WTf">
+                            <connections>
+                                <action selector="cancelButtonClicked:" destination="L5W-cZ-llS" id="ESf-6X-s7v"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="applePayPurchase" destination="Km2-wj-DkC" id="AzC-iZ-FKs"/>
                         <outlet property="cartInformation" destination="g5d-VO-Wfs" id="OG3-bG-aQ6"/>
@@ -231,7 +239,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="apN-oD-2ec" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2808.8000000000002" y="149.77511244377811"/>
+            <point key="canvasLocation" x="4946" y="149"/>
         </scene>
         <!--Add Payment-->
         <scene sceneID="7I8-r3-N8v">
@@ -288,7 +296,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aBP-vR-m2D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4568.8000000000002" y="160.56971514242881"/>
+            <point key="canvasLocation" x="5820" y="149"/>
         </scene>
         <!--Home-->
         <scene sceneID="uXh-uW-gdA">
@@ -382,14 +390,6 @@
                                     <segue destination="uGi-58-RTk" kind="presentation" id="L1e-vR-cjv"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKb-nY-KX7">
-                                <frame key="frameInset" minX="309" minY="234" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="L5W-cZ-llS" kind="show" id="PLM-zo-3eC"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.53725490200000003" green="0.69411764710000001" blue="0.72549019609999998" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
@@ -431,6 +431,88 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v1V-IF-Wff" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1772" y="120.08995502248877"/>
+        </scene>
+        <!--Select Groomer-->
+        <scene sceneID="znz-8t-Ad2">
+            <objects>
+                <tableViewController id="WJc-CU-ySq" customClass="SelectGroomerTableViewController" customModule="VetsNow" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="108" sectionHeaderHeight="28" sectionFooterHeight="28" id="ZA1-mf-im9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <mapView key="tableHeaderView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="8aP-H1-YsH">
+                            <rect key="frame" x="0.0" y="64" width="375" height="188"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </mapView>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="groomers" rowHeight="108" id="Pnj-YB-LsT" customClass="SelectGroomerCell" customModule="VetsNow" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="280" width="375" height="108"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Pnj-YB-LsT" id="LMh-2s-3G4">
+                                    <frame key="frameInset" width="375" height="107"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pup" translatesAutoresizingMaskIntoConstraints="NO" id="VP0-Kb-wml" customClass="CircleImageView" customModule="VetsNow" customModuleProvider="target">
+                                            <frame key="frameInset" minX="33" minY="38" width="46" height="46"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                    <real key="value" value="1"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                    <color key="value" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isCircle" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Company Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cbn-6M-r3i">
+                                            <frame key="frameInset" minX="99" minY="38" width="117" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Distance from you" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBh-2s-kxr">
+                                            <frame key="frameInset" minX="277" minY="39" width="64" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Service Selected " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vH6-Xd-21L">
+                                            <frame key="frameInset" minX="99" minY="63" width="117" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="companyName" destination="cbn-6M-r3i" id="GVA-d8-MBC"/>
+                                    <outlet property="distanceFromUser" destination="wBh-2s-kxr" id="oUe-Gd-PsU"/>
+                                    <outlet property="selectedService" destination="vH6-Xd-21L" id="Yy5-dM-iFt"/>
+                                    <outlet property="vendorProfilePic" destination="VP0-Kb-wml" id="H14-DJ-gFX"/>
+                                    <segue destination="L5W-cZ-llS" kind="show" id="XKl-Nl-1FM"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="WJc-CU-ySq" id="RTS-q6-lpm"/>
+                            <outlet property="delegate" destination="WJc-CU-ySq" id="7l2-Nc-uG3"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Select Groomer" id="ypy-Fe-RCS">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="hmy-Mf-opG">
+                            <connections>
+                                <action selector="cancelButtonClicked:" destination="WJc-CU-ySq" id="0eb-m1-szR"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cwt-ML-aqP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4049" y="149"/>
         </scene>
         <!--Side Menu Navigation Controller-->
         <scene sceneID="m5q-xQ-rjR">
@@ -492,6 +574,14 @@
                                 <color key="textColor" red="0.53725490200000003" green="0.69411764710000001" blue="0.72549019609999998" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btW-0c-Hu3">
+                                <frame key="frameInset" minX="16" minY="617" width="91" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go to Cart "/>
+                                <connections>
+                                    <segue destination="FuQ-xr-rU8" kind="show" id="Ofj-WA-pUZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96862745100000003" green="0.86274509799999999" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -512,28 +602,28 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QeI-ef-m1n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2562.3188405797105" y="900.81521739130437"/>
+            <point key="canvasLocation" x="2470" y="901"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="0CY-eG-yec">
+        <scene sceneID="eTv-xN-Ajo">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4P2-2w-BfT" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FuQ-xr-rU8" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="axo-0f-bv6">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="w4U-rH-e8I">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="wLU-dE-blP" kind="relationship" relationship="rootViewController" id="40x-t7-3vr"/>
+                        <segue destination="WJc-CU-ySq" kind="relationship" relationship="rootViewController" id="8yp-AC-Kn1"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2pQ-yk-vqF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QKU-Zv-I7e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3629.5999999999999" y="160.56971514242881"/>
+            <point key="canvasLocation" x="3230" y="149"/>
         </scene>
     </scenes>
     <resources>
@@ -541,6 +631,7 @@
         <image name="Apple_Pay_mark_normal_" width="45" height="29"/>
         <image name="dog-paw" width="512" height="512"/>
         <image name="groomnowimage" width="890" height="593"/>
+        <image name="pup" width="4287" height="2858"/>
         <image name="shopBag" width="200" height="200"/>
     </resources>
 </document>
