@@ -19,6 +19,8 @@ class PaymentVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.navigationController?.isNavigationBarHidden = true
+        
         cartInformation.text = "\(cart)"
         totalPrice.text = "\(userTotalCount)"
         
