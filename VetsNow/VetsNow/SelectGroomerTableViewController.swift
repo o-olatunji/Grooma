@@ -20,26 +20,27 @@ class SelectGroomerTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        retrieveMessages()
+        //retrieveNames()
+        getImages()
         
     }
     
-    func retrieveMessages() {
-        var query:PFQuery = PFQuery(className: "_User")
-        query.findObjectsInBackground {
-            (objects, error) -> Void in
-            
-            for object in objects! {
-                let name:String? = (object as PFObject)["name"] as? String
-                if name != nil {
-                    self.names.append(name!)
-                    
-                    print("name added")
-                }
-            }
-            self.tableView.reloadData()
-        }
-    }
+//    func retrieveNames() {
+//        var query:PFQuery = PFQuery(className: "_User")
+//        query.findObjectsInBackground {
+//            (objects, error) -> Void in
+//            
+//            for object in objects! {
+//                let name:String? = (object as PFObject)["name"] as? String
+//                if name != nil {
+//                    self.names.append(name!)
+//                    
+//                    print("name added")
+//                }
+//            }
+//            self.tableView.reloadData()
+//        }
+//    }
     
     
     func getImages() {
@@ -50,17 +51,16 @@ class SelectGroomerTableViewController: UITableViewController {
             for object in objects! {
                 
                 let thumbNail = object["ProfilePicure"] as! PFFile
-                
+                let titles = object["name"] as! String
                 thumbNail.getDataInBackground(block: { (data, error) in
                     
-                    if error == nil {
-                        
-                        let image = UIImage(data:data!)
-                        //image object implementation
-                        self.images.append(image!)
-                        
-                        print("image added!")
-                    }
+                    self.names.append(titles)
+                    let image = UIImage(data:data!)
+                    
+                    self.images.append(image!)
+                    
+                    print("image added!")
+                    
                     
                     self.main.addOperation {
                         self.tableView.reloadData()
@@ -74,6 +74,9 @@ class SelectGroomerTableViewController: UITableViewController {
         }
         
     }
+    
+    
+    
     
     
     @IBAction func cancelButtonClicked(_ sender: AnyObject) {
@@ -93,7 +96,7 @@ class SelectGroomerTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "groomers", for: indexPath) as! SelectGroomerCell
         
-   //     cell.vendorProfilePic.image = images[indexPath.row]
+        cell.vendorProfilePic.image = images[indexPath.row]
         cell.companyName.text = names[indexPath.row]
         
         return cell

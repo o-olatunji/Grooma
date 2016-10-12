@@ -222,6 +222,14 @@
                         </subviews>
                         <color key="backgroundColor" red="0.46666666670000001" green="0.63529411759999999" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem systemItem="cancel" id="cNV-RO-WTf">
+                            <connections>
+                                <action selector="cancelButtonClicked:" destination="L5W-cZ-llS" id="ESf-6X-s7v"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="applePayPurchase" destination="Km2-wj-DkC" id="AzC-iZ-FKs"/>
                         <outlet property="cartInformation" destination="g5d-VO-Wfs" id="OG3-bG-aQ6"/>
@@ -231,7 +239,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="apN-oD-2ec" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4596" y="100"/>
+            <point key="canvasLocation" x="4946" y="149"/>
         </scene>
         <!--Add Payment-->
         <scene sceneID="7I8-r3-N8v">
@@ -288,7 +296,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aBP-vR-m2D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5482" y="99"/>
+            <point key="canvasLocation" x="5820" y="149"/>
         </scene>
         <!--Home-->
         <scene sceneID="uXh-uW-gdA">
@@ -382,14 +390,6 @@
                                     <segue destination="uGi-58-RTk" kind="presentation" id="L1e-vR-cjv"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKb-nY-KX7">
-                                <frame key="frameInset" minX="309" minY="234" width="46" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="FuQ-xr-rU8" kind="show" id="ZdX-hZ-dPe"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.53725490200000003" green="0.69411764710000001" blue="0.72549019609999998" alpha="1" colorSpace="deviceRGB"/>
                         <constraints>
@@ -440,13 +440,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <imageView key="tableHeaderView" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pets" id="pyh-pd-bN9">
-                            <rect key="frame" x="0.0" y="64" width="375" height="173"/>
+                        <mapView key="tableHeaderView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="8aP-H1-YsH">
+                            <rect key="frame" x="0.0" y="64" width="375" height="188"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        </imageView>
+                        </mapView>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="groomers" rowHeight="108" id="Pnj-YB-LsT" customClass="SelectGroomerCell" customModule="VetsNow" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="265" width="375" height="108"/>
+                                <rect key="frame" x="0.0" y="280" width="375" height="108"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Pnj-YB-LsT" id="LMh-2s-3G4">
                                     <frame key="frameInset" width="375" height="107"/>
@@ -512,7 +512,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cwt-ML-aqP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3788" y="100.29985007496252"/>
+            <point key="canvasLocation" x="4049" y="149"/>
         </scene>
         <!--Side Menu Navigation Controller-->
         <scene sceneID="m5q-xQ-rjR">
@@ -574,6 +574,14 @@
                                 <color key="textColor" red="0.53725490200000003" green="0.69411764710000001" blue="0.72549019609999998" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="btW-0c-Hu3">
+                                <frame key="frameInset" minX="16" minY="617" width="91" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go to Cart "/>
+                                <connections>
+                                    <segue destination="FuQ-xr-rU8" kind="show" id="Ofj-WA-pUZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.96862745100000003" green="0.86274509799999999" blue="0.7725490196" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -594,14 +602,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QeI-ef-m1n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2562.3188405797105" y="900.81521739130437"/>
+            <point key="canvasLocation" x="2470" y="901"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="eTv-xN-Ajo">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FuQ-xr-rU8" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="w4U-rH-e8I">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="w4U-rH-e8I">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
@@ -615,7 +623,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QKU-Zv-I7e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2848.8000000000002" y="100.29985007496252"/>
+            <point key="canvasLocation" x="3230" y="149"/>
         </scene>
     </scenes>
     <resources>
@@ -623,7 +631,6 @@
         <image name="Apple_Pay_mark_normal_" width="45" height="29"/>
         <image name="dog-paw" width="512" height="512"/>
         <image name="groomnowimage" width="890" height="593"/>
-        <image name="pets" width="384" height="255"/>
         <image name="pup" width="4287" height="2858"/>
         <image name="shopBag" width="200" height="200"/>
     </resources>

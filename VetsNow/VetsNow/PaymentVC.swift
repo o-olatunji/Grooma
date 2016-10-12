@@ -8,9 +8,15 @@
 
 import UIKit
 import PassKit
+import Parse
 
 
 class PaymentVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
+    
+    @IBAction func cancelButtonClicked(_ sender: AnyObject) {
+        dismiss(animated: true, completion: nil)
+
+    }
     @IBOutlet weak var cartInformation: UILabel!
     
     @IBOutlet weak var totalPrice: UILabel!
@@ -19,7 +25,9 @@ class PaymentVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         self.navigationController?.isNavigationBarHidden = true
+        self.navigationController?.isToolbarHidden = false 
         
         cartInformation.text = "\(cart)"
         totalPrice.text = "\(userTotalCount)"
