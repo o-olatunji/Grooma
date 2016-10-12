@@ -22,6 +22,8 @@ class StripePaymentVC: UIViewController, STPPaymentCardTextFieldDelegate {
     override func viewDidLoad() {
      super.viewDidLoad()
         
+        self.navigationController?.isNavigationBarHidden = false 
+        
     paymentTextField = STPPaymentCardTextField(frame: CGRect(x: 20, y: 150, width:self.view.frame.size.width - 40, height: 40))
     paymentTextField.delegate = self
     view.addSubview(paymentTextField)
