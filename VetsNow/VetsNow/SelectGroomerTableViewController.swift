@@ -16,6 +16,7 @@ class SelectGroomerTableViewController: UITableViewController {
     var images:[UIImage] = []
     var names: [String] = []
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -92,7 +93,7 @@ class SelectGroomerTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "groomers", for: indexPath) as! SelectGroomerCell
         
-        cell.vendorProfilePic.image = images[indexPath.row]
+   //     cell.vendorProfilePic.image = images[indexPath.row]
         cell.companyName.text = names[indexPath.row]
         
         return cell

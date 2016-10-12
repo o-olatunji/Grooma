@@ -8,21 +8,23 @@
 
 import UIKit
 
-class Vendors {
+struct Vendors {
     
     let name: String
     let  profilePicture: UIImage
     let  coordinates: Double
     
     
-    init(name: String, profilePicture: UIImage, coordinates: Double) {
+   static func from(dictionary: NSDictionary) -> Vendors? {
         
-        self.coordinates = coordinates
-        self.name = name
-        self.profilePicture = profilePicture
+        guard let name = dictionary["name"] as? String,
+            let coordinates = dictionary["coordinates"] as? Double,
+            let profilePicture = dictionary["ProfilePicure"] as? UIImage
+            
+            else { return nil }
         
+    
+        return Vendors(name: name, profilePicture: profilePicture, coordinates: coordinates)
     }
-    
-    
-    
 }
+
