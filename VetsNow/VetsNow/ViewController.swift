@@ -46,6 +46,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         FBButtonAppearance.layer.cornerRadius = 9
+        
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {

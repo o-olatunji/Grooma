@@ -124,7 +124,7 @@ class Home : UIViewController, CLLocationManagerDelegate , MKMapViewDelegate, UI
         servicesTable.separatorEffect = UIVisualEffect()
         
         mapView.delegate = self
-        
+        mapView.showsUserLocation = true
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -133,7 +133,7 @@ class Home : UIViewController, CLLocationManagerDelegate , MKMapViewDelegate, UI
 
         //Create Map, 2D coordiantes, and set region with annotation:
         let location = locationManager.location
-        let center = CLLocationCoordinate2D(latitude: location!.coordinate.latitude, longitude: location!.coordinate.longitude)
+        let center = CLLocationCoordinate2D(latitude: (location?.coordinate.latitude)!, longitude: (location?.coordinate.longitude)!)
         let latDelta :CLLocationDegrees = 0.05
         let longDelta: CLLocationDegrees = 0.05
         let span : MKCoordinateSpan = MKCoordinateSpanMake(latDelta, longDelta)
@@ -145,6 +145,7 @@ class Home : UIViewController, CLLocationManagerDelegate , MKMapViewDelegate, UI
         let annotation = MKPointAnnotation()
         annotation.coordinate = center
         mapView.addAnnotation(annotation)
+        mapView.removeAnnotations(mapView.annotations)
         
         logOutButton.layer.cornerRadius = 15
         logOutButton.layer.masksToBounds = true
@@ -162,7 +163,7 @@ class Home : UIViewController, CLLocationManagerDelegate , MKMapViewDelegate, UI
     
     //Location Delegate Methods:
     private func locationManager(manager: CLLocationManager, didUpdateLocation locations: [CLLocation]) {
-        locationManager.stopUpdatingLocation()
+        //locationManager.stopUpdatingLocation()
     }
     private func locationManager(manager: CLLocationManager, didFailWithError error : NSError) {
         print ("Errors:" + error.localizedDescription)
