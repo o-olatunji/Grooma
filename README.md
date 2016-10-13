@@ -12,15 +12,15 @@ We believe you shouldn't have to waste time finding and traveling to meet your p
 
 ##Frequently Asked Questions
 
-I loved my last groomer! Can I call him/her again?
+### I loved my last groomer! Can I call him/her again?
 
 Yes! You can add services and groomers to your favorites and add them to your bag for checkout! Please note that if your groomer is not available, we'll send the next available one. 
 
-Do you service all pets?
+### Do you service all pets?
 
 We primarily service canine and feline friends, but other animals are slowly being added to our service list. Enroll in push notifications to be notified of our new services. 
 
-I don't have Apple Pay! Can I enter my Credit Card information?
+### I don't have Apple Pay! Can I enter my Credit Card information?
 
 Yes! We have an alternative payment methoda where you can enter your credit card information for in-app purchase. 
 
@@ -45,14 +45,9 @@ We implemented Apple Pay as a preferred payment method for our users. Users can 
 
 ##Prototype 
 
+Our first Vendor Flow Prototype:
 
-https://popapp.in/w/projects/57feb4d186054d863b6285c0/preview
-
-
-
-
-
-<img width="372" alt="screen shot 2016-10-12 at 11 49 02 pm" src="https://cloud.githubusercontent.com/assets/20820597/19339173/93686a9a-90d6-11e6-82ff-13d6bb32852d.png">
+![vendorflow1](https://cloud.githubusercontent.com/assets/20820597/19358334/5d7ee176-912a-11e6-905e-5d5a4e8ba189.gif)
 
 
 ##Sample Code 
