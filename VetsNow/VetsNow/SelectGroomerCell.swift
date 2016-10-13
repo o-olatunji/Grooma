@@ -10,8 +10,7 @@ import UIKit
 
 class SelectGroomerCell: UITableViewCell {
     @IBOutlet weak var vendorProfilePic: UIImageView!
-    @IBOutlet weak var distanceFromUser: UILabel!
-    @IBOutlet weak var selectedService: UILabel!
+    @IBOutlet weak var distanceFromYou: UILabel!
     @IBOutlet weak var companyName: UILabel!
 
     
