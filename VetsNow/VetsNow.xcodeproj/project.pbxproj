@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32B9B5601DAD54C200A0A8E6 /* VendorServiceTableViewSlideMenu copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B9B55F1DAD54C200A0A8E6 /* VendorServiceTableViewSlideMenu copy.swift */; };
+		32B9B5621DAD54DC00A0A8E6 /* VendorServiceItemTableViewCell copy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32B9B5611DAD54DC00A0A8E6 /* VendorServiceItemTableViewCell copy.swift */; };
 		334D2310887F64DB77971BB2 /* Pods_VetsNow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B348DCE39ED574232F441A66 /* Pods_VetsNow.framework */; };
 		841E17431DA8FFC000B62B91 /* CartMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841E17421DA8FFC000B62B91 /* CartMenu.swift */; };
 		843256941DA7662D00505912 /* ServicesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843256931DA7662C00505912 /* ServicesTableViewCell.swift */; };
@@ -28,7 +30,6 @@
 		848FE89D1D9B99FC00CD52FF /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 848FE8941D9B99FC00CD52FF /* libz.tbd */; };
 		848FE89E1D9B99FC00CD52FF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848FE8951D9B99FC00CD52FF /* QuartzCore.framework */; };
 		848FE89F1D9B99FC00CD52FF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848FE8961D9B99FC00CD52FF /* Security.framework */; };
-		848FE8A01D9B99FC00CD52FF /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848FE8971D9B99FC00CD52FF /* StoreKit.framework */; };
 		848FE8A11D9B99FC00CD52FF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848FE8981D9B99FC00CD52FF /* SystemConfiguration.framework */; };
 		848FE8A91D9B9B3E00CD52FF /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848FE8A31D9B9B3E00CD52FF /* Bolts.framework */; };
 		848FE8AA1D9B9B3E00CD52FF /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 848FE8A41D9B9B3E00CD52FF /* Parse.framework */; };
@@ -45,11 +46,22 @@
 		84FFB1BA1DA65D3A00C2C1A0 /* MenuPicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FFB1B91DA65D3A00C2C1A0 /* MenuPicCell.swift */; };
 		84FFB1BD1DA65F7100C2C1A0 /* MenuItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FFB1BC1DA65F7100C2C1A0 /* MenuItemTableViewCell.swift */; };
 		84FFB1EF1DA6E33400C2C1A0 /* GroomerOrOwner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FFB1EE1DA6E33400C2C1A0 /* GroomerOrOwner.swift */; };
+		BF6AEECA1DAC25710036385D /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6AEEC71DAC25710036385D /* Fabric.framework */; };
+		BF6AEECB1DAC25710036385D /* Stripe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF6AEEC81DAC25710036385D /* Stripe.framework */; };
+		BF6AEECC1DAC25710036385D /* Stripe.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BF6AEEC91DAC25710036385D /* Stripe.bundle */; };
+		BF6AEECE1DAC26F10036385D /* StripePaymentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6AEECD1DAC26F10036385D /* StripePaymentVC.swift */; };
+		BF6AEED11DAC49EA0036385D /* PaymentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6AEED01DAC49EA0036385D /* PaymentVC.swift */; };
+		BFF588DB1DAD668300343370 /* SelectGroomerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF588DA1DAD668300343370 /* SelectGroomerCell.swift */; };
+		BFF588DD1DAD66B700343370 /* SelectGroomerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF588DC1DAD66B700343370 /* SelectGroomerTableViewController.swift */; };
+		BFF588DF1DAD6A3100343370 /* Vendors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF588DE1DAD6A3100343370 /* Vendors.swift */; };
+		BFF588E11DAD766800343370 /* SelectGroomerCircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF588E01DAD766800343370 /* SelectGroomerCircleImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0EB2529289C54E0AE4C161B8 /* Pods-VetsNow.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VetsNow.release.xcconfig"; path = "Pods/Target Support Files/Pods-VetsNow/Pods-VetsNow.release.xcconfig"; sourceTree = "<group>"; };
 		210FC65BFF78084200B66158 /* Pods-VetsNow.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VetsNow.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VetsNow/Pods-VetsNow.debug.xcconfig"; sourceTree = "<group>"; };
+		32B9B55F1DAD54C200A0A8E6 /* VendorServiceTableViewSlideMenu copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VendorServiceTableViewSlideMenu copy.swift"; sourceTree = "<group>"; };
+		32B9B5611DAD54DC00A0A8E6 /* VendorServiceItemTableViewCell copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VendorServiceItemTableViewCell copy.swift"; sourceTree = "<group>"; };
 		841E17421DA8FFC000B62B91 /* CartMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartMenu.swift; sourceTree = "<group>"; };
 		843256931DA7662C00505912 /* ServicesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesTableViewCell.swift; sourceTree = "<group>"; };
 		84626F281D9EE68500048401 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -72,7 +84,6 @@
 		848FE8941D9B99FC00CD52FF /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		848FE8951D9B99FC00CD52FF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		848FE8961D9B99FC00CD52FF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		848FE8971D9B99FC00CD52FF /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		848FE8981D9B99FC00CD52FF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		848FE8A31D9B9B3E00CD52FF /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "parse-library-1/Bolts.framework"; sourceTree = "<group>"; };
 		848FE8A41D9B9B3E00CD52FF /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "parse-library-1/Parse.framework"; sourceTree = "<group>"; };
@@ -91,6 +102,16 @@
 		84FFB1BC1DA65F7100C2C1A0 /* MenuItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItemTableViewCell.swift; sourceTree = "<group>"; };
 		84FFB1EE1DA6E33400C2C1A0 /* GroomerOrOwner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroomerOrOwner.swift; sourceTree = "<group>"; };
 		B348DCE39ED574232F441A66 /* Pods_VetsNow.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VetsNow.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF6AEEC71DAC25710036385D /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		BF6AEEC81DAC25710036385D /* Stripe.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Stripe.framework; sourceTree = "<group>"; };
+		BF6AEEC91DAC25710036385D /* Stripe.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Stripe.bundle; path = Stripe.framework/Stripe.bundle; sourceTree = "<group>"; };
+		BF6AEECD1DAC26F10036385D /* StripePaymentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StripePaymentVC.swift; sourceTree = "<group>"; };
+		BF6AEECF1DAC36990036385D /* VetsNow.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VetsNow.entitlements; sourceTree = "<group>"; };
+		BF6AEED01DAC49EA0036385D /* PaymentVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaymentVC.swift; sourceTree = "<group>"; };
+		BFF588DA1DAD668300343370 /* SelectGroomerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectGroomerCell.swift; sourceTree = "<group>"; };
+		BFF588DC1DAD66B700343370 /* SelectGroomerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectGroomerTableViewController.swift; sourceTree = "<group>"; };
+		BFF588DE1DAD6A3100343370 /* Vendors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Vendors.swift; sourceTree = "<group>"; };
+		BFF588E01DAD766800343370 /* SelectGroomerCircleImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectGroomerCircleImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF6AEECB1DAC25710036385D /* Stripe.framework in Frameworks */,
 				84626F291D9EE68500048401 /* Foundation.framework in Frameworks */,
 				848FE8BA1D9BADC300CD52FF /* FBSDKLoginKit.framework in Frameworks */,
 				848FE8991D9B99FC00CD52FF /* CFNetwork.framework in Frameworks */,
@@ -111,7 +133,6 @@
 				848FE89D1D9B99FC00CD52FF /* libz.tbd in Frameworks */,
 				848FE89E1D9B99FC00CD52FF /* QuartzCore.framework in Frameworks */,
 				848FE89F1D9B99FC00CD52FF /* Security.framework in Frameworks */,
-				848FE8A01D9B99FC00CD52FF /* StoreKit.framework in Frameworks */,
 				848FE8A91D9B9B3E00CD52FF /* Bolts.framework in Frameworks */,
 				848FE8A11D9B99FC00CD52FF /* SystemConfiguration.framework in Frameworks */,
 				848FE8BB1D9BADC300CD52FF /* FBSDKShareKit.framework in Frameworks */,
@@ -119,6 +140,7 @@
 				848FE8AA1D9B9B3E00CD52FF /* Parse.framework in Frameworks */,
 				848FE88F1D9B998A00CD52FF /* AudioToolbox.framework in Frameworks */,
 				334D2310887F64DB77971BB2 /* Pods_VetsNow.framework in Frameworks */,
+				BF6AEECA1DAC25710036385D /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +189,7 @@
 		848FE8671D9B90FE00CD52FF /* VetsNow */ = {
 			isa = PBXGroup;
 			children = (
+				BF6AEECF1DAC36990036385D /* VetsNow.entitlements */,
 				84FFB1B81DA65CDC00C2C1A0 /* User */,
 				84FFB1BB1DA65D5200C2C1A0 /* Groomer */,
 				848CC1E51DA302E500FDC6E6 /* Storyboards */,
@@ -180,6 +203,9 @@
 		848FE88D1D9B998A00CD52FF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BF6AEEC71DAC25710036385D /* Fabric.framework */,
+				BF6AEEC81DAC25710036385D /* Stripe.framework */,
+				BF6AEEC91DAC25710036385D /* Stripe.bundle */,
 				84626F281D9EE68500048401 /* Foundation.framework */,
 				84E5A7BE1D9BB2730032EEE8 /* ParseFacebookUtils.framework */,
 				848FE8B61D9BADC300CD52FF /* FBSDKCoreKit.framework */,
@@ -197,7 +223,6 @@
 				848FE8941D9B99FC00CD52FF /* libz.tbd */,
 				848FE8951D9B99FC00CD52FF /* QuartzCore.framework */,
 				848FE8961D9B99FC00CD52FF /* Security.framework */,
-				848FE8971D9B99FC00CD52FF /* StoreKit.framework */,
 				848FE8981D9B99FC00CD52FF /* SystemConfiguration.framework */,
 				848FE88E1D9B998A00CD52FF /* AudioToolbox.framework */,
 				B348DCE39ED574232F441A66 /* Pods_VetsNow.framework */,
@@ -211,6 +236,11 @@
 				84FFB1EE1DA6E33400C2C1A0 /* GroomerOrOwner.swift */,
 				848FE86A1D9B90FE00CD52FF /* ViewController.swift */,
 				84E5A7C01D9BD8AF0032EEE8 /* Home.swift */,
+				BF6AEECD1DAC26F10036385D /* StripePaymentVC.swift */,
+				BFF588E01DAD766800343370 /* SelectGroomerCircleImage.swift */,
+				BF6AEED01DAC49EA0036385D /* PaymentVC.swift */,
+				BFF588DA1DAD668300343370 /* SelectGroomerCell.swift */,
+				BFF588DC1DAD66B700343370 /* SelectGroomerTableViewController.swift */,
 			);
 			name = User;
 			sourceTree = "<group>";
@@ -219,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				848CC1E61DA3040F00FDC6E6 /* VendorLogInViewController.swift */,
+				BFF588DE1DAD6A3100343370 /* Vendors.swift */,
 				84A5B6E81DA2371200C8E2FA /* VetSignViewController.swift */,
 			);
 			name = Groomer;
@@ -227,7 +258,9 @@
 		84FFB1EC1DA6D63600C2C1A0 /* SlideMenus */ = {
 			isa = PBXGroup;
 			children = (
+				32B9B55F1DAD54C200A0A8E6 /* VendorServiceTableViewSlideMenu copy.swift */,
 				848CC1E81DA31D8900FDC6E6 /* ServiceTableViewMenu.swift */,
+				32B9B5611DAD54DC00A0A8E6 /* VendorServiceItemTableViewCell copy.swift */,
 				84FFB1BC1DA65F7100C2C1A0 /* MenuItemTableViewCell.swift */,
 				841E17421DA8FFC000B62B91 /* CartMenu.swift */,
 				84FFB1B91DA65D3A00C2C1A0 /* MenuPicCell.swift */,
@@ -259,6 +292,7 @@
 				848FE8631D9B90FE00CD52FF /* Resources */,
 				02042677CA62BE222ABE1B18 /* [CP] Embed Pods Frameworks */,
 				8E9DF73FE65FE2BE52D94A5F /* [CP] Copy Pods Resources */,
+				BF6AEEC61DAC25370036385D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -281,9 +315,16 @@
 				TargetAttributes = {
 					848FE8641D9B90FE00CD52FF = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = WMVNZYDS86;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplePay = {
+								enabled = 1;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -312,6 +353,7 @@
 			files = (
 				848FE8731D9B90FE00CD52FF /* LaunchScreen.storyboard in Resources */,
 				848CC1E21DA3025600FDC6E6 /* VendorLogIn.storyboard in Resources */,
+				BF6AEECC1DAC25710036385D /* Stripe.bundle in Resources */,
 				848FE8701D9B90FE00CD52FF /* Assets.xcassets in Resources */,
 				848CC1E41DA302BC00FDC6E6 /* PetOwnerHome.storyboard in Resources */,
 				848FE8B01D9B9B7100CD52FF /* parse-library-1 in Resources */,
@@ -352,6 +394,19 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VetsNow/Pods-VetsNow-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		BF6AEEC61DAC25370036385D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 1163d86fe49fb80382a35d41701565159d83c911 29735167a590d8b1279587e3ca8d2facfec0effda64228e378c2ddf6b3f053aa";
+		};
 		FA736B0AADE7CB52F8ACBC18 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -377,14 +432,22 @@
 				848CC1E71DA3040F00FDC6E6 /* VendorLogInViewController.swift in Sources */,
 				848FE86B1D9B90FE00CD52FF /* ViewController.swift in Sources */,
 				84A5B6E91DA2371200C8E2FA /* VetSignViewController.swift in Sources */,
+				BFF588DD1DAD66B700343370 /* SelectGroomerTableViewController.swift in Sources */,
+				BF6AEED11DAC49EA0036385D /* PaymentVC.swift in Sources */,
+				BFF588DF1DAD6A3100343370 /* Vendors.swift in Sources */,
+				BFF588E11DAD766800343370 /* SelectGroomerCircleImage.swift in Sources */,
 				84E5A7C11D9BD8AF0032EEE8 /* Home.swift in Sources */,
 				848CC1E91DA31D8900FDC6E6 /* ServiceTableViewMenu.swift in Sources */,
+				32B9B5601DAD54C200A0A8E6 /* VendorServiceTableViewSlideMenu copy.swift in Sources */,
 				843256941DA7662D00505912 /* ServicesTableViewCell.swift in Sources */,
 				84FFB1BD1DA65F7100C2C1A0 /* MenuItemTableViewCell.swift in Sources */,
 				848FE8691D9B90FE00CD52FF /* AppDelegate.swift in Sources */,
 				84FFB1BA1DA65D3A00C2C1A0 /* MenuPicCell.swift in Sources */,
 				84FFB1EF1DA6E33400C2C1A0 /* GroomerOrOwner.swift in Sources */,
+				BF6AEECE1DAC26F10036385D /* StripePaymentVC.swift in Sources */,
+				BFF588DB1DAD668300343370 /* SelectGroomerCell.swift in Sources */,
 				841E17431DA8FFC000B62B91 /* CartMenu.swift in Sources */,
+				32B9B5621DAD54DC00A0A8E6 /* VendorServiceItemTableViewCell copy.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,8 +582,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = VetsNow/VetsNow.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = WMVNZYDS86;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/parse-library-1",
@@ -529,7 +593,7 @@
 				INFOPLIST_FILE = VetsNow/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.milesFishman.VetsNow;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GroomaNow.Grooma;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -543,8 +607,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = VetsNow/VetsNow.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = WMVNZYDS86;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/parse-library-1",
@@ -553,7 +618,7 @@
 				INFOPLIST_FILE = VetsNow/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.milesFishman.VetsNow;
+				PRODUCT_BUNDLE_IDENTIFIER = com.GroomaNow.Grooma;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
