@@ -8,17 +8,20 @@ We believe you shouldn't have to waste time finding and traveling to meet your p
 
 ##Our Team 
 
-<img width="615" alt="screen shot 2016-10-13 at 9 23 20 am" src="https://cloud.githubusercontent.com/assets/20820597/19357694/9211a48a-9127-11e6-9266-2cc33bbd4603.png">
+<img width="612" alt="screen shot 2016-10-13 at 9 34 45 am" src="https://cloud.githubusercontent.com/assets/20820597/19357934/92c48310-9128-11e6-8325-c941c38c11b0.png">
 
 ##Frequently Asked Questions
 
-I loved my last groomer? Can I call him/her again?
+I loved my last groomer! Can I call him/her again?
+
 Yes! You can add services and groomers to your favorites and add them to your bag for checkout! Please note that if your groomer is not available, we'll send the next available one. 
 
 Do you service all pets?
+
 We primarily service canine and feline friends, but other animals are slowly being added to our service list. Enroll in push notifications to be notified of our new services. 
 
 I don't have Apple Pay! Can I enter my Credit Card information?
+
 Yes! We have an alternative payment methoda where you can enter your credit card information for in-app purchase. 
 
 
