@@ -43,8 +43,8 @@ https://popapp.in/w/projects/57feb4d186054d863b6285c0/preview
 
 
 
-<img width="372" alt="screen shot 2016-09-02 at 6 08 34 am" src="https://cloud.githubusercontent.com/assets/20820597/18205059/e1fb4f6e-70d4-11e6-8ef7-dbe9d640f367.png">
->
+<img width="372" alt="screen shot 2016-10-12 at 11 49 02 pm" src="https://cloud.githubusercontent.com/assets/20820597/19339173/93686a9a-90d6-11e6-82ff-13d6bb32852d.png">
+
 
 ##Sample Code 
 
