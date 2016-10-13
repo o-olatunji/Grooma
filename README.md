@@ -6,6 +6,10 @@ Grooma is your one stop solution for grooming and pet care services delivered to
 
 We believe you shouldn't have to waste time finding and traveling to meet your pets needs. We offer full service including all of your grooming as well as some in-home veterinarian services. Our clients always receive first-class end-to-end services at the most affordable price. 
 
+##Our Team 
+
+<img width="615" alt="screen shot 2016-10-13 at 9 23 20 am" src="https://cloud.githubusercontent.com/assets/20820597/19357694/9211a48a-9127-11e6-9266-2cc33bbd4603.png">
+
 ##Frequently Asked Questions
 
 I loved my last groomer? Can I call him/her again?
@@ -32,6 +36,8 @@ We implemented Apple Pay as a preferred payment method for our users. Users can 
 
 
 ##User Research 
+
+
 
 
 ##Prototype 
