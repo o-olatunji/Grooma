@@ -23,7 +23,7 @@ Yes! We have an alternative payment methoda where you can enter your credit card
 ###Parse Backend
 We implemented used Parse instead of Firebase to host our backend data. Parse allowed us to create and save PFUsers and PFObjects. We then queried data from the data base to print within our application.
 
-##GeoLocation Tracking
+###GeoLocation Tracking
 We use mapkit to implement a tracking system as seen in Uber and Lyft. Users call Groomers from their "current location" and Groomers are able to accept a User's request and see their location. Users can also track the distance of their "accepted" Groomer service from their home, as seen in Uber. 
 
 ###Apple Pay 
