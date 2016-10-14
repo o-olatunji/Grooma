@@ -13,7 +13,4 @@ class SelectGroomerCell: UITableViewCell {
     @IBOutlet weak var distanceFromYou: UILabel!
     @IBOutlet weak var companyName: UILabel!
 
-    
-    
-    
 }

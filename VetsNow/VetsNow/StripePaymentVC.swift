@@ -13,53 +13,56 @@ class StripePaymentVC: UIViewController, STPPaymentCardTextFieldDelegate {
     
     @IBAction func cancelPaymentButtonClicked(_ sender: AnyObject) {
         
-        dismiss(animated: true, completion: nil)
+        let viewDrop = self.popoverPresentationController
+        
+        viewDrop?.dismissalTransitionWillBegin()
+        
     }
     var paymentTextField: STPPaymentCardTextField! = nil
     
     
     @IBOutlet weak var submitButton: UIButton!
     override func viewDidLoad() {
-     super.viewDidLoad()
+        super.viewDidLoad()
         
-        self.navigationController?.isNavigationBarHidden = false 
+        self.navigationController?.isNavigationBarHidden = false
         
-    paymentTextField = STPPaymentCardTextField(frame: CGRect(x: 20, y: 150, width:self.view.frame.size.width - 40, height: 40))
-    paymentTextField.delegate = self
-    view.addSubview(paymentTextField)
-  //  submitButton = UIButton(type: UIButtonType.system)
- //   submitButton.frame = CGRect(x: 15, y: 100, width: 100, height: 44)
-   // submitButton.isEnabled = false
-   // submitButton.setTitle("Submit", for: UIControlState.normal)
- //   submitButton.addTarget(self, action: #selector(self.submitCard(_ :)), for: UIControlEvents.touchUpInside)
-  //  view.addSubview(submitButton)
-}
-
-
-func paymentCardTextFieldDidChange(_ textField: STPPaymentCardTextField) {
-   submitButton.isEnabled = textField.valid
-    
-}
-
-    @IBAction func submitCard(_ sender: AnyObject) {
-
-    // If you have your own form for getting credit card information, you can construct
-    // your own STPCardParams from number, month, year, and CVV.
-    let card = paymentTextField.cardParams
-    
-    STPAPIClient.shared().createToken(withCard: card) { token, error in
-        guard let stripeToken = token else {
-            NSLog("Error creating token: %@", error!.localizedDescription);
-            return
-        }
-        
-        // TODO: send the token to your server so it can create a charge
-        let alert = UIAlertController(title: "Card Saved", message: "Your Card Information Has Been Saved!", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        self.present(alert, animated: true, completion: nil)
+        paymentTextField = STPPaymentCardTextField(frame: CGRect(x: 20, y: 150, width:self.view.frame.size.width - 40, height: 40))
+        paymentTextField.delegate = self
+        view.addSubview(paymentTextField)
+        //  submitButton = UIButton(type: UIButtonType.system)
+        //   submitButton.frame = CGRect(x: 15, y: 100, width: 100, height: 44)
+        // submitButton.isEnabled = false
+        // submitButton.setTitle("Submit", for: UIControlState.normal)
+        //   submitButton.addTarget(self, action: #selector(self.submitCard(_ :)), for: UIControlEvents.touchUpInside)
+        //  view.addSubview(submitButton)
     }
-}
-
-
-
+    
+    
+    func paymentCardTextFieldDidChange(_ textField: STPPaymentCardTextField) {
+        submitButton.isEnabled = textField.valid
+        
+    }
+    
+    @IBAction func submitCard(_ sender: AnyObject) {
+        
+        // If you have your own form for getting credit card information, you can construct
+        // your own STPCardParams from number, month, year, and CVV.
+        let card = paymentTextField.cardParams
+        
+        STPAPIClient.shared().createToken(withCard: card) { token, error in
+            guard token != nil else {
+                NSLog("Error creating token: %@", error!.localizedDescription);
+                return
+            }
+            
+            // TODO: send the token to your server so it can create a charge
+            let alert = UIAlertController(title: "Card Saved", message: "Your Card Information Has Been Saved!", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
+    
+    
+    
 }

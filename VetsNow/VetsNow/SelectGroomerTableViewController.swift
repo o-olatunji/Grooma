@@ -18,7 +18,6 @@ class SelectGroomerTableViewController: UITableViewController, CLLocationManager
     var latitude: CLLocationDegrees = 0
     var longitude: CLLocationDegrees = 0
     
-    
     let main = OperationQueue.main
     var images:[UIImage] = []
     var names: [String] = []
@@ -34,10 +33,8 @@ class SelectGroomerTableViewController: UITableViewController, CLLocationManager
         locationManager2.requestWhenInUseAuthorization()
         locationManager2.startUpdatingLocation()
         
-        
         mapView2.delegate = self
         mapView2.showsUserLocation = true
-        
         
         //retrieveNames()
         getImages()
@@ -74,27 +71,8 @@ class SelectGroomerTableViewController: UITableViewController, CLLocationManager
         print ("Errors:" + error.localizedDescription)
     }
     
-    
-    //    func retrieveNames() {
-    //        var query:PFQuery = PFQuery(className: "_User")
-    //        query.findObjectsInBackground {
-    //            (objects, error) -> Void in
-    //
-    //            for object in objects! {
-    //                let name:String? = (object as PFObject)["name"] as? String
-    //                if name != nil {
-    //                    self.names.append(name!)
-    //
-    //                    print("name added")
-    //                }
-    //            }
-    //            self.tableView.reloadData()
-    //        }
-    //    }
-    
-    
     func getImages() {
-        var query:PFQuery = PFQuery(className: "_User")
+        let query:PFQuery = PFQuery(className: "_User")
         query.findObjectsInBackground {
             (objects, error) -> Void in
             
@@ -125,10 +103,6 @@ class SelectGroomerTableViewController: UITableViewController, CLLocationManager
         
     }
     
-    
-    
-    
-    
     @IBAction func cancelButtonClicked(_ sender: AnyObject) {
         
         dismiss(animated: true, completion: nil)
@@ -139,8 +113,8 @@ class SelectGroomerTableViewController: UITableViewController, CLLocationManager
         let riderRequest = PFObject(className: "riderRequest")
         guard let currentUser = PFUser.current() else { return }
         
-        riderRequest["username"] = currentUser.username
-        riderRequest["location"] = PFGeoPoint(latitude: self.latitude, longitude: self.longitude)
+        riderRequest["username"] = currentUser.email
+        riderRequest["locations"] = PFGeoPoint(latitude: self.latitude, longitude: self.longitude)
         
         riderRequest.saveInBackground { (success, error) in
             
@@ -148,48 +122,8 @@ class SelectGroomerTableViewController: UITableViewController, CLLocationManager
             if success {
                 print("success")
             }
-            
-            
-            }
-            
         }
-
-    
-    
-       /* riderRequest.saveInBackground {
-            (block: success, error: NSError) Void in
-            if (success) {
-                
-                self.requestGroomer.setTitle("Cancel Groomer", for: UIControlState.normal)
-                var query = PFQuery(className: "riderRequest")
-                query.whereKey("username", equalTo: PFUser.current()?.username)
-                query.findObjectsInBackground(block: [AnyObject]?, error: NSError?) -> Void in
-                if error == nil {
-                    //the find succeeded
-                    print("Successfully retreived \(objects!.count) scores.")
-                    //do something with the find objects
-                    if let objects = objects as? [PFObject] {
-                        for object in objects {
-                            print(object.objectId)
-                        }
-                    }
-                } else {
-                    //log details of the failure 
-                    print("Error: \(error!) \(error!.userInfo)")
-                }
-            }
-            
-            } else {
-                var alert = UIAlertController(title: "Could not call groomer", message: "Please try again!", preferredStyle: UIAlertControllerStyle.alert)
-                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
-                self.presentedViewController(alert, animated: true, completion: nil)
-            }
-            
-        }
- */
-    
-    
-    
+    }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -208,15 +142,11 @@ class SelectGroomerTableViewController: UITableViewController, CLLocationManager
         cell.companyName.text = names[indexPath.row]
         
         return cell
- 
+        
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "groomers", for: indexPath) as! SelectGroomerCell
+        _ = tableView.dequeueReusableCell(withIdentifier: "groomers", for: indexPath) as! SelectGroomerCell
         
         requestGroomerButton(indexPath.row as AnyObject)
     }
-
-    
 }
- 
-
