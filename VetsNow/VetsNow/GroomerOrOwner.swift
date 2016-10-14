@@ -2,7 +2,7 @@
 //  GroomerOrOwner.swift
 //  VetsNow
 //
-//  Created by Admin on 10/6/16.
+//  Created by Miles Fishman on 10/6/16.
 //  Copyright © 2016 Miles Fishman. All rights reserved.
 //
 
@@ -30,9 +30,6 @@ class GroomerOrOwner : UIViewController {
         
         groomer.layer.cornerRadius = 9
         petOwner.layer.borderWidth = 0
-        
-        
-        
     }
     
 }

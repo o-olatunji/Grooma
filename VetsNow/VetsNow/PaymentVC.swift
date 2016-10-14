@@ -12,31 +12,49 @@ import Parse
 
 
 class PaymentVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
-    
+    let main = OperationQueue.main
+    @IBOutlet weak var paymentView: UIView!
     @IBAction func cancelButtonClicked(_ sender: AnyObject) {
         dismiss(animated: true, completion: nil)
-
+        
     }
     @IBOutlet weak var cartInformation: UILabel!
     
     @IBOutlet weak var totalPrice: UILabel!
     @IBOutlet weak var tableView: UITableView!
- 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let session = PFObject(className: "Session")
+        session.remove(forKey:"objectId")
+        session.deleteInBackground { (true, error) in
+            
+            if error == nil {
+                
+                print("OKay")
+            }
+            
+            
+        }
         
-        self.navigationController?.isNavigationBarHidden = true
-        self.navigationController?.isToolbarHidden = false 
+        paymentView.layer.cornerRadius = 10
         
-        cartInformation.text = "\(cart)"
-        totalPrice.text = "\(userTotalCount)"
+        cartInformation.text = cart.joined(separator: ", ")
+        totalPrice.text = "$\(sumedArr)"
         
         tableView.delegate = self
         tableView.dataSource = self
         
-       // self.configureView()
-        applePayPurchase.isHidden = !PKPaymentAuthorizationViewController.canMakePayments(usingNetworks: SupportedPaymentNetworks)
+        // self.configureView()
+        PKPaymentAuthorizationViewController.canMakePayments(usingNetworks: SupportedPaymentNetworks)
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        self.navigationController?.isNavigationBarHidden = true
+        self.navigationController?.isToolbarHidden = false
 
     }
     @IBOutlet weak var applePayPurchase: UIButton!
@@ -70,23 +88,6 @@ class PaymentVC: UIViewController, UITableViewDelegate, UITableViewDataSource{
         }
         
     }
-    
-   /*     let request = PKPaymentRequest()
-        let applePayController = PKPaymentAuthorizationViewController(paymentRequest: request)
-        self.present(applePayController, animated: true, completion: nil)
-        
-         applePayController.delegate = self
-        
-        request.merchantIdentifier = ApplePaySwagMerchantID
-        request.supportedNetworks = SupportedPaymentNetworks
-        request.merchantCapabilities = PKMerchantCapability.capability3DS
-        request.countryCode = "US"
-        request.currencyCode = "USD"
-        
-        request.paymentSummaryItems = [
-            PKPaymentSummaryItem(label: "Your Selected Items", amount: 0)  ] */
-        
-
     
     let SupportedPaymentNetworks = [PKPaymentNetwork.visa, PKPaymentNetwork.masterCard, PKPaymentNetwork.amex]
     let ApplePaySwagMerchantID = "GroomaAppmerchant.com.Grooma" // Fill in your merchant ID here!

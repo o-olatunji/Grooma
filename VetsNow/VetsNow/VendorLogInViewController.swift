@@ -57,47 +57,8 @@ class VendorLogInViewController: UIViewController {
         })
     }
     
-    override func viewDidDisappear(_ animated: Bool) {
-        
-        PFUser.logOut()
-    }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         view.endEditing(true)
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
