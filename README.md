@@ -38,9 +38,12 @@ We implemented Apple Pay as a preferred payment method for our users. Users can 
 
 
 
-##User Research 
+##Frameworks
+FBSDK
+Stripe
+Core Location 
 
-
+Coming Soon: Audio Toolbox
 
 
 ##Prototype 
