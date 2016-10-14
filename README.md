@@ -51,8 +51,7 @@ Our first Vendor Flow Prototype:
 
 
 ##Sample Code 
-
-Activating Apple Pay 
+Creating Apple Pay Functionality When "Buy with Apple Pay" Button is Clicked.  
 
 <img width="674" alt="screen shot 2016-10-14 at 11 24 54 am" src="https://cloud.githubusercontent.com/assets/20820597/19398340/0bef8c66-9201-11e6-88b7-2cb492eb06e1.png">
 
