@@ -2,7 +2,7 @@
 //  Home.swift
 //  VetsNow
 //
-//  Created by Admin on 9/28/16.
+//  Created by Miles Fishman on 9/28/16.
 //  Copyright © 2016 Miles Fishman. All rights reserved.
 //
 
@@ -21,6 +21,8 @@ var sumedArr:Int = 0
 //
 
 class Home : UIViewController, CLLocationManagerDelegate , MKMapViewDelegate, UITableViewDataSource, UITableViewDelegate   {
+    
+    var favs:[String] = []
     
     @IBOutlet weak var bagCount: UILabel!
     @IBOutlet weak var servicesTable: UITableView!
@@ -46,7 +48,7 @@ class Home : UIViewController, CLLocationManagerDelegate , MKMapViewDelegate, UI
         self.bagCount.text = "\(arr.count)"
         self.bagCount.reloadInputViews()
     }
-    var services = ["Clean Eyes:", "Clean Ears:", "Trim Pads:", "Clip Nails:", "Full Scrub:"]
+    var services = ["Clean Eyes", "Clean Ears", "Trim Pads", "Clip Nails", "Full Scrub"]
     var servicePrices = ["$20", "$20", "$20", "$20", "$60"]
     
     @IBOutlet weak var logOutButton: UIButton!
@@ -199,6 +201,10 @@ class Home : UIViewController, CLLocationManagerDelegate , MKMapViewDelegate, UI
         
         let favorite = UITableViewRowAction(style: .normal, title: " ❤️ ") { action, index in
             
+            self.favs.append(self.services[indexPath.row])
+            
+            print (self.favs)
+            
             tableView.setEditing(false, animated: true)
             
         }
@@ -241,7 +247,6 @@ class Home : UIViewController, CLLocationManagerDelegate , MKMapViewDelegate, UI
         guard let numberPricesStringIntoInteger = Int(numberPrices[1]) else {
             return nil
         }
-        
         return numberPricesStringIntoInteger
     }
 }

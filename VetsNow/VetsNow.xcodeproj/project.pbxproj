@@ -12,6 +12,9 @@
 		334D2310887F64DB77971BB2 /* Pods_VetsNow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B348DCE39ED574232F441A66 /* Pods_VetsNow.framework */; };
 		841E17431DA8FFC000B62B91 /* CartMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841E17421DA8FFC000B62B91 /* CartMenu.swift */; };
 		843256941DA7662D00505912 /* ServicesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843256931DA7662C00505912 /* ServicesTableViewCell.swift */; };
+		8451FA5F1DB0069D00F5F6C5 /* VendorDashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8451FA5E1DB0069D00F5F6C5 /* VendorDashboardView.swift */; };
+		8451FA611DB0BA1E00F5F6C5 /* RequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8451FA601DB0BA1E00F5F6C5 /* RequestTableViewCell.swift */; };
+		8451FA631DB142A600F5F6C5 /* ViewRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8451FA621DB142A600F5F6C5 /* ViewRequests.swift */; };
 		84626F291D9EE68500048401 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84626F281D9EE68500048401 /* Foundation.framework */; };
 		848CC1E21DA3025600FDC6E6 /* VendorLogIn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848CC1E01DA3025600FDC6E6 /* VendorLogIn.storyboard */; };
 		848CC1E41DA302BC00FDC6E6 /* PetOwnerHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848CC1E31DA302BC00FDC6E6 /* PetOwnerHome.storyboard */; };
@@ -64,6 +67,9 @@
 		32B9B5611DAD54DC00A0A8E6 /* VendorServiceItemTableViewCell copy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VendorServiceItemTableViewCell copy.swift"; sourceTree = "<group>"; };
 		841E17421DA8FFC000B62B91 /* CartMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartMenu.swift; sourceTree = "<group>"; };
 		843256931DA7662C00505912 /* ServicesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServicesTableViewCell.swift; sourceTree = "<group>"; };
+		8451FA5E1DB0069D00F5F6C5 /* VendorDashboardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VendorDashboardView.swift; sourceTree = "<group>"; };
+		8451FA601DB0BA1E00F5F6C5 /* RequestTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestTableViewCell.swift; sourceTree = "<group>"; };
+		8451FA621DB142A600F5F6C5 /* ViewRequests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewRequests.swift; sourceTree = "<group>"; };
 		84626F281D9EE68500048401 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		848CC1E11DA3025600FDC6E6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/VendorLogIn.storyboard; sourceTree = "<group>"; };
 		848CC1E31DA302BC00FDC6E6 /* PetOwnerHome.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PetOwnerHome.storyboard; sourceTree = "<group>"; };
@@ -196,6 +202,8 @@
 				84FFB1ED1DA6D66400C2C1A0 /* AD/pList/Assets/Header */,
 				84FFB1EC1DA6D63600C2C1A0 /* SlideMenus */,
 				843256931DA7662C00505912 /* ServicesTableViewCell.swift */,
+				8451FA601DB0BA1E00F5F6C5 /* RequestTableViewCell.swift */,
+				8451FA621DB142A600F5F6C5 /* ViewRequests.swift */,
 			);
 			path = VetsNow;
 			sourceTree = "<group>";
@@ -249,6 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				848CC1E61DA3040F00FDC6E6 /* VendorLogInViewController.swift */,
+				8451FA5E1DB0069D00F5F6C5 /* VendorDashboardView.swift */,
 				BFF588DE1DAD6A3100343370 /* Vendors.swift */,
 				84A5B6E81DA2371200C8E2FA /* VetSignViewController.swift */,
 			);
@@ -315,11 +324,15 @@
 				TargetAttributes = {
 					848FE8641D9B90FE00CD52FF = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = WMVNZYDS86;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplePay = {
-								enabled = 1;
+								enabled = 0;
+							};
+							com.apple.BackgroundModes = {
+								enabled = 0;
 							};
 							com.apple.InAppPurchase = {
 								enabled = 0;
@@ -433,9 +446,12 @@
 				848FE86B1D9B90FE00CD52FF /* ViewController.swift in Sources */,
 				84A5B6E91DA2371200C8E2FA /* VetSignViewController.swift in Sources */,
 				BFF588DD1DAD66B700343370 /* SelectGroomerTableViewController.swift in Sources */,
+				8451FA631DB142A600F5F6C5 /* ViewRequests.swift in Sources */,
 				BF6AEED11DAC49EA0036385D /* PaymentVC.swift in Sources */,
+				8451FA5F1DB0069D00F5F6C5 /* VendorDashboardView.swift in Sources */,
 				BFF588DF1DAD6A3100343370 /* Vendors.swift in Sources */,
 				BFF588E11DAD766800343370 /* SelectGroomerCircleImage.swift in Sources */,
+				8451FA611DB0BA1E00F5F6C5 /* RequestTableViewCell.swift in Sources */,
 				84E5A7C11D9BD8AF0032EEE8 /* Home.swift in Sources */,
 				848CC1E91DA31D8900FDC6E6 /* ServiceTableViewMenu.swift in Sources */,
 				32B9B5601DAD54C200A0A8E6 /* VendorServiceTableViewSlideMenu copy.swift in Sources */,
@@ -582,9 +598,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = VetsNow/VetsNow.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = WMVNZYDS86;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/parse-library-1",
@@ -607,9 +622,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = VetsNow/VetsNow.entitlements;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = WMVNZYDS86;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/parse-library-1",

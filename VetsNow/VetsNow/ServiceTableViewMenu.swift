@@ -25,6 +25,7 @@ class ServiceTableViewMenu: UIViewController, UITableViewDelegate, UITableViewDa
         menuTable.delegate = self
         menuTable.dataSource = self
         
+        SideMenuManager.menuEnableSwipeGestures = true
         SideMenuManager.menuWidth = 320
         SideMenuManager.menuFadeStatusBar = false
         SideMenuManager.menuShadowColor = UIColor.black
@@ -34,11 +35,6 @@ class ServiceTableViewMenu: UIViewController, UITableViewDelegate, UITableViewDa
         profilePicUser.image = profileImage
         profilePicUser.layer.masksToBounds = true
         profilePicUser.layer.cornerRadius = 90
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        
-       
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -59,5 +55,8 @@ class ServiceTableViewMenu: UIViewController, UITableViewDelegate, UITableViewDa
         }
         return UITableViewCell()
     }
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        performSegue(withIdentifier: "menuSegue", sender: self)
+    }
 }
