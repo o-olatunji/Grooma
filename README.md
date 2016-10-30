@@ -48,9 +48,14 @@ Coming Soon: Audio Toolbox
 
 ##Prototype 
 
+Our first User Flow Prototype:
+
+![userflow1](http://giphy.com/gifs/l0HlwTc83eXO2Lhzq/html5) 
+
 Our first Vendor Flow Prototype:
 
 ![vendorflow1](https://cloud.githubusercontent.com/assets/20820597/19358334/5d7ee176-912a-11e6-905e-5d5a4e8ba189.gif)
+
 
 
 ##Sample Code 
