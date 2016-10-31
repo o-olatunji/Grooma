@@ -50,7 +50,7 @@ Coming Soon: Audio Toolbox
 
 Our first User Flow Prototype:
 
-![userflow1](http://giphy.com/gifs/l0HlwTc83eXO2Lhzq/html5) 
+![grooma-user-flow-p1](https://cloud.githubusercontent.com/assets/20737269/19841480/8966948a-9ec9-11e6-9e4b-592d9940c006.gif)
 
 Our first Vendor Flow Prototype:
 
