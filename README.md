@@ -44,15 +44,13 @@ Stripe
 Core Location 
 
 Coming Soon: Audio Toolbox
+ 
+ 
+## Our first User Flow Prototype:
 
+![grooma-user-flow-p2](https://cloud.githubusercontent.com/assets/20737269/19841505/f8159688-9ec9-11e6-92a9-fd2509c24596.gif)
 
-##Prototype 
-
-Our first User Flow Prototype:
-
-![grooma-user-flow-p1](https://cloud.githubusercontent.com/assets/20737269/19841480/8966948a-9ec9-11e6-9e4b-592d9940c006.gif)
-
-Our first Vendor Flow Prototype:
+## Our first Vendor Flow Prototype:
 
 ![vendorflow1](https://cloud.githubusercontent.com/assets/20820597/19358334/5d7ee176-912a-11e6-905e-5d5a4e8ba189.gif)
 
